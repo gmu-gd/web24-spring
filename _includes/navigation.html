@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li><a class="main-link" href="{{ "/" | relative_url}}" />Senior Project</a></li>
+    <li><i class="fas fa-arrow-right"></i></li>
+    <li class="mobile-nav"><a>menu</a></li>
+    <div id="menu" class="mobile-hide">
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link | relative_url}}" {% if page.url contains item.link %}class="active"{% endif %}>{{ item.name }}</a></li>
+    {% endfor %}
+    </div>
+  </ul>
+</nav>

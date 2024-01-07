@@ -1,0 +1,70 @@
+I"�<p>This tutorial will introduce the image element and how to use that element to get images to display on your pages. This tutorial will use Exercise 2 as the example for adding images.</p>
+
+<h3 id="step-1-open-your-repository-in-atom"><span id="step1">Step 1: Open Your Repository in Atom</span></h3>
+<p>Start with opening up the Github App and making sure you have your repository as the Current Repository and that the Current Branch is gh-pages. If those two pieces of information are correct, click the “Open in Atom” button in the middle of the screen.</p>
+
+<p><img src="/assets/img/t4/step1a1.png" alt="main Github App window" title="Step 1a" /></p>
+
+<p>This should open up Atom with a screen that looks something like the below.</p>
+
+<p><img src="/assets/img/t4/step1a2.png" alt="repository opened in Atom" title="Step 1a" /></p>
+
+<p>A few notes here. If you don’t see the project panel on the left of the window you can go to <span class="command"><em>View &gt; Toggle Tree View</em></span> to open it up. If you see files that start with a period, like <strong>.gitignore</strong> or <strong>.DS_Store</strong> you can ignore those. They are hidden files that you probably don’t see in your repository but show up in Atom. This view is also assuming you are looking at this tutorial after finishing Tutorial 2. If you have other files or folders in your repository this will look different.</p>
+
+<h3 id="step-2-add-a-folder-html-file-and-images"><span id="step2">Step 2: Add a Folder, HTML File, and Images</span></h3>
+<p>The nice thing about Atom is you can add folders and files right from the tree view in the left panel. If you right click in that panel you will see the pop out in the image below.</p>
+
+<p><img src="/assets/img/t4/step2.png" alt="right clicking in the tree view" title="Step 2" /></p>
+
+<h4 id="step-2a-add-the-exercise-2-folder">Step 2a: Add the Exercise 2 Folder</h4>
+<p>In that pop out click the <span class="command"><em>New Folder</em></span> option and in the pop up that says “Enter the path for the new folder” type a folder name for your exercise 2 folder, <strong>e2</strong> is nice, short, and descriptive. Hit <span class="command"><em>Enter</em></span> to create the folder.</p>
+
+<p><img src="/assets/img/t4/step2a.png" alt="adding a new folder in Atom" title="Step 2a" /></p>
+
+<h4 id="step-2b-add-an-html-file">Step 2b: Add an HTML File</h4>
+<p>Now right click on the folder you just created but this time select <span class="command"><em>New File</em></span>. Another pop up will appear that should already be filled with the folder name then a forward slash. If you don’t see that folder name you did not right click on the folder you just made. You want to add a new HTML file to this folder so what do you think it should be called? If you said <span class="spoiler">index.html</span> you are correct. Type the file name and then hit enter to create the file.</p>
+
+<p><img src="/assets/img/t4/step2b1.png" alt="adding a new file in Atom" title="Step 2b" /></p>
+
+<p>When you hit enter Atom should create the file and also open it so your tree view should have a new exercise 2 folder and an HTML file inside of that.</p>
+
+<p><img src="/assets/img/t4/step2b2.png" alt="view of newly created folder and file in Atom" title="Step 2b" /></p>
+
+<h4 id="step-2c-add-an-image-folder-and-images">Step 2c: Add an Image Folder and Images</h4>
+<p>Once again right click on the Exercise 2 folder you created and add a new folder named <strong>images</strong>.</p>
+
+<p><img src="/assets/img/t4/step2c1.png" alt="adding an images folder in Atom" title="Step 2c" /></p>
+
+<p>Now that the images folder is created, add your images to that folder. You can do this a bunch of different ways but the easiest might be opening two windows with the files and dragging them from the old location to the new or copying from the old location and pasting to the new location. However you want to do it the goal is to get the 5 PNG files into the images folder.</p>
+
+<p><img src="/assets/img/t4/step2c2.png" alt="adding png files to the images folder" title="Step 2c" /></p>
+
+<h3 id="step-3-add-in-basic-html-setup"><span id="step3">Step 3: Add in Basic HTML Setup</span></h3>
+<p>Your HTML file should still be open but if it isn’t make sure your HTML file in the Exercise 2 folder is open and add in the minimum HTML set up, give it a descriptive <code class="language-plaintext highlighter-rouge">title</code> and then save the file.</p>
+
+<p><img src="/assets/img/t4/step3.png" alt="html file with minimum HTML" title="Step 3" /></p>
+
+<h3 id="step-4-add-an-image"><span id="step4">Step 4: Add an Image</span></h3>
+
+<p>To get images to display on your page you need to add the image element <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code>. The image element needs two attributes, <code class="language-plaintext highlighter-rouge">src</code> and <code class="language-plaintext highlighter-rouge">alt</code>. The <code class="language-plaintext highlighter-rouge">src</code> attribute is where the path to the image file goes and the <code class="language-plaintext highlighter-rouge">alt</code> attribute holds text to display if the image link is broken or the user is using a screen reader. The image element is also an empty element so there is no content or closing tag.</p>
+
+<p>In the <code class="language-plaintext highlighter-rouge">body</code> add an image element, <code class="language-plaintext highlighter-rouge">&lt;img src="#" alt="#"&gt;</code>. Make sure it is indented one level since it is a child of the <code class="language-plaintext highlighter-rouge">body</code>.</p>
+
+<p><img src="/assets/img/t4/step4a1.png" alt="image element added in the body" title="Step 4" /></p>
+
+<p>Now replace the two attributes with the appropriate values. <code class="language-plaintext highlighter-rouge">src</code> – <span class="spoiler">src=”images/1.png”</span>. <code class="language-plaintext highlighter-rouge">alt</code> - <span class="spoiler">alt=”shape layout 1”</span>. Once again the path in the <code class="language-plaintext highlighter-rouge">src</code> attribute is dependent on your folder and file naming. This path works for my file and folder naming, if yours is different the path needs to be different.</p>
+
+<p><img src="/assets/img/t4/step4a2.png" alt="image element with attribute values added" title="Step 4" /></p>
+
+<p>Before you add the other images it is worth saving the file and checking to see if everything is working in the browser. Once you have checked and verified that the image is displaying on the page, repeat this step four more times to add all of your images for Exercise 2 onto the page.</p>
+
+<p><img src="/assets/img/t4/step4a3.png" alt="all five images added to the HTML file" title="Step 4" /></p>
+
+<h3 id="step-5-link-to-exercise-2"><span id="step5">Step 5: Link to Exercise 2</span></h3>
+
+<p>The last step is adding a link to your main page for Exercise 2. So open up your index.html file in your root directory and add in an anchor element, <code class="language-plaintext highlighter-rouge">&lt;a href="#"&gt;...&lt;/a&gt;</code> for Exercise 2. Make sure you are wrapping the text inside the list item for Exercise 2 and make sure you have an opening tag and closing tag. The value for the <code class="language-plaintext highlighter-rouge">href</code> attribute is dependent on your folder and file structure.</p>
+
+<p><img src="/assets/img/t4/step5.png" alt="adding a link to e2 on the homepage" title="Step 5" /></p>
+
+<p>Make sure both files are saved and preview the homepage and test to see if the link for Exercise 2 is working. If it is, great! You can open up the Github App and push the changes you just made. If it isn’t working, check to make sure all your syntax, spelling, and paths are correct and try it again. If it still isn’t working, ask for help.</p>
+:ET

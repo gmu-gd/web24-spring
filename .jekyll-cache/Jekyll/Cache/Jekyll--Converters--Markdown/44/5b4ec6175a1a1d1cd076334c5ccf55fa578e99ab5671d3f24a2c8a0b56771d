@@ -1,0 +1,122 @@
+I"�=<p>This tutorial will go through the process of setting up a two column layout with floats and divs using your main <strong>index.html</strong> file and its associated CSS file to work with.</p>
+
+<h3 id="step-1-open-your-repository-and-files"><span id="step1">Step 1: Open Your Repository and Files</span></h3>
+<p>Open your repository in Atom and then open up your main <strong>index.html</strong> file and CSS file associated with it by double clicking on the files in the tree view.</p>
+
+<p>Once both are open you can view them side by side by dragging the the tab with your CSS file to the right until the right column is highlighted. Once it is highlighted you can let go and you should be able to see both files as a split screen in Atom. If you don’t want to work this way that’s okay.</p>
+
+<p><img src="/assets/img/t6/step1.png" alt="two column view in Atom" title="Step 1" /></p>
+
+<p>The HTML file in the screenshot should closely resemble your HTML file but the CSS file might look different than yours which is okay.</p>
+
+<h3 id="step-2-section-off-the-html-file"><span id="step2">Step 2: Section off the HTML file</span></h3>
+<p>We are going to work in the HTML file first and get all of our content structured in a way that will be easy to modify with CSS later. The goal of this step is to wrap content in the HTML file in semantic elements (<code class="language-plaintext highlighter-rouge">header</code>, <code class="language-plaintext highlighter-rouge">main</code>, etc.) or <code class="language-plaintext highlighter-rouge">div</code> elements. So let’s start with the semantic elements by adding a <code class="language-plaintext highlighter-rouge">header</code> element and a <code class="language-plaintext highlighter-rouge">main</code> element to the page.</p>
+
+<h4 id="step-2a-adding-a-header-element">Step 2a: Adding a Header Element</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">header</code> element should contain content that would go in a … header (no better way to explain it 🤦). The main heading on this page seems like good content to go there. Wrap the <code class="language-plaintext highlighter-rouge">h1</code> element in a <code class="language-plaintext highlighter-rouge">header</code> element. This means adding an opening tag for the <code class="language-plaintext highlighter-rouge">header</code> on a new line above the <code class="language-plaintext highlighter-rouge">h1</code> element, indenting the <code class="language-plaintext highlighter-rouge">h1</code> element one level because now it is a child of the <code class="language-plaintext highlighter-rouge">header</code> element, and then adding the closing tag for the <code class="language-plaintext highlighter-rouge">header</code> on a new line below the <code class="language-plaintext highlighter-rouge">h1</code> element. Should look something like the below.</p>
+
+<p><img src="/assets/img/t6/step2a.png" alt="adding header element to html file" title="Step 2a" /></p>
+
+<h4 id="step-2b-adding-a-main-element">Step 2b: Adding a Main Element</h4>
+
+<p>Next we want to do a similar process with the other content on the page (which in this example is the <code class="language-plaintext highlighter-rouge">ul</code> and all the content it contains). This time though, instead of the <code class="language-plaintext highlighter-rouge">header</code> element we want to use the <code class="language-plaintext highlighter-rouge">main</code> element. The <code class="language-plaintext highlighter-rouge">main</code> element represents the dominant content of the <code class="language-plaintext highlighter-rouge">body</code> element, which in this case is the list of links.</p>
+
+<p>So now wrap the rest of the content in your body in the <code class="language-plaintext highlighter-rouge">main</code> element. Make sure you have an opening tag before all the content you want to contain, a closing tag after all the content, and that the content inside the <code class="language-plaintext highlighter-rouge">main</code> element is indented appropriately.</p>
+
+<p><img src="/assets/img/t6/step2b.png" alt="adding main element to html file" title="Step 2b" /></p>
+
+<h4 id="step-2c-splitting-the-list">Step 2c: Splitting the List</h4>
+
+<p>Next we want to split the unordered list into two unordered lists. We want to do this because one column of this page is going to be exercise links and the other column is going to be project links.</p>
+
+<p>The unordered list should be split up with a list for exercises and a list for the project. To do that just go to where the last exercise is and close the <code class="language-plaintext highlighter-rouge">ul</code> after it and then open another one after that. This is lines 23 and 24 in the screenshot below.</p>
+
+<p><img src="/assets/img/t6/step2c.png" alt="splitting the list into two lists" title="Step 2c" /></p>
+
+<h4 id="step-2d-adding-two-div-elements">Step 2d: Adding Two Div Elements</h4>
+
+<p>Finally we want to wrap each list in its own <code class="language-plaintext highlighter-rouge">div</code> element so we can add styles to make two columns instead of the single column that it is right now.</p>
+
+<p>Before each <code class="language-plaintext highlighter-rouge">ul</code> add an opening <code class="language-plaintext highlighter-rouge">div</code> tag and after each <code class="language-plaintext highlighter-rouge">ul</code> add a closing div tag. Don’t forget to indent contained elements one level each.</p>
+
+<p><img src="/assets/img/t6/step2d1.png" alt="wrapping each list in a div element" title="Step 2d" /></p>
+
+<p>The last step here is adding a class to the <code class="language-plaintext highlighter-rouge">div</code> elements. Since these are two equal columns and they are probably going to have the same styles we can give them both the same class name. It could be whatever you want but I’m going to use “col” to keep it short and informative.</p>
+
+<p><img src="/assets/img/t6/step2d2.png" alt="giving the div elements the col class" title="Step 2d" /></p>
+
+<p>Now you should have a nicely sectioned and formatted file that has a <code class="language-plaintext highlighter-rouge">header</code>, a <code class="language-plaintext highlighter-rouge">main</code>, 2 <code class="language-plaintext highlighter-rouge">ul</code>’s, and 2 <code class="language-plaintext highlighter-rouge">div</code>’s each with the “col” class. I’m also going to add two heading elements in each column to show which column is which. Not something you have to do but helpful for someone who might be unfamiliar with the site.</p>
+
+<p><img src="/assets/img/t6/step2d3.png" alt="adding h2 elements above each list" title="Step 2d" /></p>
+
+<p>Now if you save it and preview the file you will see that nothing really changed with the exception of the list now being two lists.</p>
+
+<p><img src="/assets/img/t6/step2d4.png" alt="preview of page in browser" title="Step 2d" /></p>
+
+<h3 id="step-3-adding-styles"><span id="step3">Step 3: Adding Styles</span></h3>
+
+<p>The page is structured how it needs to be in order to allow for two columns to work but we still need to add the CSS rules that make the site display like we want. The wireframe below illustrates the layout we are going for. The <code class="language-plaintext highlighter-rouge">header</code> is the blue box with the <code class="language-plaintext highlighter-rouge">h1</code> type in there. The <code class="language-plaintext highlighter-rouge">main</code> is the yellow box with the two red <code class="language-plaintext highlighter-rouge">div</code>’s in there each containing one of the lists. We don’t want them stretching across the page so we are going to give them some widths to make the content narrower and add some margins to make that width center on the page.</p>
+
+<p><img src="/assets/img/t6/step3.png" alt="wireframe of what the site should look like" title="Step 3" /></p>
+
+<h4 id="step-3a-header-styles">Step 3a: Header Styles</h4>
+
+<p>Let’s start at the top with getting the <code class="language-plaintext highlighter-rouge">header</code> element into its place. I added some comments to my CSS file to note where my general, layout, type, and link styles are to help keep me organized. The styles we are getting ready to add are going to go under my layout styles comment.</p>
+
+<p>The first thing we want to do when we want to style something is write the correct selector. In this case I want to style the <code class="language-plaintext highlighter-rouge">header</code> element so I’ll use an element selector and type <code class="language-plaintext highlighter-rouge">header { }</code> on a new line. In between those two curly brackets I’m going to add an empty line so the final result will look like the screenshot below.</p>
+
+<p><img src="/assets/img/t6/step3a1.png" alt="header style rule set up" title="Step 3a" /></p>
+
+<p>Now that the basic syntax is there let’s start writing some declarations. I know I want to change the width and make sure it is centered on the page so I’m going to add the <code class="language-plaintext highlighter-rouge">width</code> property and the <code class="language-plaintext highlighter-rouge">margin</code> property. I’m also going to add a <code class="language-plaintext highlighter-rouge">background-color</code> to this so we can see what is happening and remove it later. The value for the width is up to you. I’m going to start with <code class="language-plaintext highlighter-rouge">75vw</code> (vw stands for viewport widths so 75vw equals 75% of the width of the window) for the <code class="language-plaintext highlighter-rouge">width</code> and add a blue background color to keep true to the wireframe. For the margins I want the top and bottom to be 25px and I want it to be centered on the page and I want to write this all as one declaration. There is an easy way to get the element to center on the page once I have given it a width. Do you remember what it is and how to write the margins as one declaration? Check your answer here <span class="spoiler">margin: 25px auto</span>.</p>
+
+<p><img src="/assets/img/t6/step3a2.png" alt="width, background color and margin declarations for header" title="Step 3a" /></p>
+
+<p>Save the CSS file (and make sure the HTML file is saved) and preview the HTML file. Mine looks something like this.</p>
+
+<p><img src="/assets/img/t6/step3a3.png" alt="preview of HTML file" title="Step 3a" /></p>
+
+<h4 id="step-3b-main-styles">Step 3b: Main Styles</h4>
+
+<p>We are going to repeat that same process for the <code class="language-plaintext highlighter-rouge">main</code> element. The only change is instead of a blue background we are going to give it a yellow background.</p>
+
+<p>So your code should look something like this.</p>
+
+<p><img src="/assets/img/t6/step3b1.png" alt="style rules for main element" title="Step 3b" /></p>
+
+<p>And your site should look something like this.</p>
+
+<p><img src="/assets/img/t6/step3b2.png" alt="preview of HTML file" title="Step 3b" /></p>
+
+<h4 id="3c-col-styles">3c: .col Styles</h4>
+
+<p>The final step is getting the columns to show up side by side. Since we have a class for our <code class="language-plaintext highlighter-rouge">div</code> elements we are going to use that as our selector instead of the element selector <code class="language-plaintext highlighter-rouge">div</code>. This is because the class selector is more specific which in this case isn’t a big deal because the only two <code class="language-plaintext highlighter-rouge">div</code> elements on the page have the “col” class but you can imagine if there were more <code class="language-plaintext highlighter-rouge">div</code> elements that had other classes we couldn’t just use the <code class="language-plaintext highlighter-rouge">div</code> element selector to style them.</p>
+
+<p>So in the CSS file we want to use the class selector <code class="language-plaintext highlighter-rouge">.col</code>.</p>
+
+<p><img src="/assets/img/t6/step3c1.png" alt=".col style rule set up" title="Step 3c" /></p>
+
+<p>The first thing we need to do is add a <code class="language-plaintext highlighter-rouge">width</code>. Now there is an easy way to make these half as wide as there parent elements. Do you know what it is? <span class="spoiler">width: 50%;</span> is correct! This works well for us because percentages are based on the width of the parent element. So instead of trying to figure out half of <code class="language-plaintext highlighter-rouge">75vw</code> we can just write <code class="language-plaintext highlighter-rouge">50%</code> and the computer does the work for us. We are also going to add a <code class="language-plaintext highlighter-rouge">background-color</code> here so we can see what is going on.</p>
+
+<p><img src="/assets/img/t6/step3c2.png" alt=".col style rule set up" title="Step 3c" /></p>
+
+<p>If you preview the page it should look something like the below. The columns are half the width of the <code class="language-plaintext highlighter-rouge">main</code> element but they aren’t sitting next to each other yet.</p>
+
+<p><img src="/assets/img/t6/step3c3.png" alt="preview of page" title="Step 3c" /></p>
+
+<p>To get these to sit next to each other we need to add a new declaration. Do you know what it is? If you said <span class="spoiler">float: left;</span> you are correct.</p>
+
+<p><img src="/assets/img/t6/step3c4.png" alt="float declaration added to .col" title="Step 3c" /></p>
+
+<p><img src="/assets/img/t6/step3c5.png" alt="preview of page" title="Step 3c" /></p>
+
+<p>But if you notice on the previewed page the yellow background for the <code class="language-plaintext highlighter-rouge">main</code> element disappeared. Remember from the Floats lecture that when you float objects they get removed from the normal flow so the containing element does not think any floated elements are contained inside it so the height changes to the height of any none floated elements it is containing (which in this case the height is 0 because there are no elements that aren’t floated inside the <code class="language-plaintext highlighter-rouge">main</code> element). To fix this we need to add one more line of code to the <code class="language-plaintext highlighter-rouge">main</code> CSS styles. Once <span class="spoiler">display: flow-root;</span> gets added to the styles for the <code class="language-plaintext highlighter-rouge">main</code> element the yellow background comes back to the height of the longer red column.</p>
+
+<p><img src="/assets/img/t6/step3c6.png" alt="display: flow-root; added to main" title="Step 3c" /></p>
+
+<p><img src="/assets/img/t6/step3c7.png" alt="preview of page" title="Step 3c" /></p>
+
+<p>After you remove the background colors you have reached the end. There is more we could do here as designers (and probably should do for practice). We could change the margins on the columns so that if the columns get too narrow the type won’t touch. If we added margins we would also have to account for that in the widths of the columns. We could add padding instead which doesn’t have to be accounted for in the width as long as you have the <code class="language-plaintext highlighter-rouge">box-sizing</code> set to <code class="language-plaintext highlighter-rouge">border-box</code> for the universal selector. That would push the content away from the edge of its box and fix the issue of type touching if the columns got too close. Some other things to make sure you are adding here are styles for your links, importing fonts from Google or Adobe, colors, sizes, all the styles to make the page look great.</p>
+
+<p><img src="/assets/img/t6/step3c8.png" alt="preview of finished page" title="Step 3c" /></p>
+:ET

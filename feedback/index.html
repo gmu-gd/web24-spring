@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Feedback</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="lightbox-dim" class="hidden"></div>
+    <div id="lightbox" class="hidden"></div>
+    <main>
+      <h1>Feedback for Coding Exercises</h1>
+      <p class="intro">Below is a list for you to reference with your feedback for various coding exercises. This is general feedback that while not entirely specific to your code should still be helpful in imprroving your code for next time.</p>
+      <p class="intro">There are example images to use as references and you can click on them to make them larger.</p>
+      <hr>
+      <h2>Table of Contents</h2>
+      <h3>HTML Files</h3>
+      <ol>
+        <li><a href="#html-one">Indents</a></li>
+        <li><a href="#html-two">Breaking Paragraphs</a></li>
+        <li><a href="#html-three">Empty Lines</a></li>
+        <li><a href="#html-four">Nonexistant Elements</a></li>
+        <li><a href="#html-five">Inline Styles</a></li>
+        <li><a href="#html-six">Break Tags</a></li>
+        <li><a href="#html-seven">Missing/Incorrect Closing Tabs</a></li>
+        <li><a href="#html-eight">Marking Up Semantically</a></li>
+        <li><a href="#html-nine">Closing Tag Order</a></li>
+        <li><a href="#html-ten">Using an ID Multiple Times</a></li>
+        <li><a href="#html-eleven">Breaking Text Elements</a></li>
+      </ol>
+      <h3>CSS Files</h3>
+      <ol>
+        <li><a href="#css-one">Indents</a></li>
+        <li><a href="#css-two">Empty Lines</a></li>
+        <li><a href="#css-three">Nonexistant Elements</a></li>
+        <li><a href="#css-four">Missing Semicolons</a></li>
+        <li><a href="#css-five">Missing Curly Bracket</a></li>
+        <li><a href="#css-six">Missing Unit on Numbers</a></li>
+        <li><a href="#css-seven">Declaration on Own Line</a></li>
+      </ol>
+      <hr>
+      <h2>HTML Files</h2>
+      <h3 id="html-one">#1: Indents</h3>
+      <img src="images/html/indents-2.png" alt="poor indenting">
+      <figcaption>Poor indenting starting at line 14. Also has unnecessary empty lines.</figcaption>
+      <img src="images/html/indents-3.png" alt="poor indenting">
+      <figcaption>Poor indenting.</figcaption>
+      <p>Indenting is important for easily readable code for humans. It helps give the code structure and a kind of hierarchy. When indenting remember that anytime you have a child element it should be indented one level from the parent and the opening and closing tag should be at the same indent level if they are on different lines. The html element is never indented, the head and body elements are indented one level. The content in the head is most likely all at the same indent level one in from the head indent. The content in the body gets more complicated but just remember that siblings exist at the same indent level and children one in from their parent.</p>
+      <img src="images/html/indents-1.png" alt="paragraphs indented past headings">
+      <figcaption>Paragraphs indented one level past the heading element above them.</figcaption>
+      <p>Sometimes I see paragraph elements indented one level more than the heading level above it. This makes some amount of sense logically because the paragraph is under that heading element but it is a habit that can lead to confusion.</p>
+      <h3 id="html-two">#2: Breaking Paragraphs</h3>
+      <img src="images/html/broken-paragraphs-1.png" alt="paragraph broken across two lines">
+      <figcaption>Paragraph broken across two lines.</figcaption>
+      <img src="images/html/broken-paragraphs-2.png" alt="paragraph broken across multiple lines">
+      <figcaption>Paragraph broken across multiple lines.</figcaption>
+      <img src="images/html/broken-paragraphs-4.png" alt="opening tag, closing tag, and content on three separate lines">
+      <figcaption>The opening tag, content, and closing tag on three separate lines.</figcaption>
+      <p>Paragraph elements should be all on one line. You should not have the opening p tag and the closing p tag on different lines. This rule applies to all text elements (h1, h3, h3, h4, h5, h6, p, li, etc.). If you want the text to show up as two distinct paragraphs you should make two distinct paragraphs, the line break is not doing anything.</p>
+      <img src="images/html/broken-paragraphs-3.png" alt="a single paragraph broken into multiple paragraphs">
+      <figcaption>A single paragraph broken into multiple paragraphs.</figcaption>
+      <p>You also don't want to break a single paragraph into multiple paragraphs unless you have a verry specific, design related reason to do so. This might seem like how you might fix the rag but it will cause more problems than it will solve.</p>
+      <h3 id="html-three">#3: Empty Lines</h3>
+      <img src="images/html/empty-lines.png" alt="empty lines in the code">
+      <figcaption>Empty lines in the code. What should be 10 lines takes up 20 lines.</figcaption>
+      <p>While empty lines are technically not hurting anything they do take up some amount of file space and make your files longer than they need to be. It is a habit worth breaking.</p>
+      <h3 id="html-four">#4: Nonexistant Elements</h3>
+      <img src="images/html/nonexistant-elements.png" alt="elements that don't exist">
+      <figcaption>All the heading elements here (h7, h8, h9, h10, h11) do not exist and should all be the same heading level.</figcaption>
+      <p>Code uses elements that do not exist in HTML. This is most common with heading elements. There are only heading elements from h1 to h6. There is no h7, h8, h9, etc. and more than likely you shouldn't need more than 6 heading levels on the site anyway. Remember that there should really only be one h1 element on each page but the others (h3, h3, h4, h5, h6) can all be used over and over.</p>
+      <h3 id="html-five">#5: Inline Styles</h3>
+      <img src="images/html/inline-styles.png" alt="inline styles in the HTML file">
+      <figcaption>On line 12 there are inline styles for the paragraph element.</figcaption>
+      <p>If you find yourself wanting to add inline styles think about why you are doing it. If you are doing it because that specific element needs to be different, add a class to the element and put the styles in the CSS using a class selector. If you only have one element on the page of that type and you just want to style it quickly you should still add an element selector and the styles to that selector in the CSS.</p>
+      <h3 id="html-six">#6: Break Tags</h3>
+      <img src="images/html/break-tags.png" alt="break tags mixed in with the HTML">
+      <figcaption>There are break tags on lines 14, 16, 17, and 21. This also has two paragraphs broken across two lines.</figcaption>
+      <p>Break tags, &lt;br&gt;, should be used sparingly and for very specific reasons. If you find yourself using them to add vertical space to the page you would be betteer served by adding a top or bottom margin to whichever elements you are trying to space out. Using break tags works but if you want to make the space where you used them bigger or smaller it becomes hard but with margins you can increase or decrease the number.</p>
+       <h3 id="html-seven">#7: Missing/Incorrect Closing Tags</h3>
+       <img src="images/html/closing-tags-1.png" alt="closing tags for the body and html elements are missing">
+       <figcaption>Line 49 is the last line of the code which means the closing tag for the body and the html elements are missing.</figcaption>
+       <img src="images/html/closing-tags-2.png" alt="closing tags for a div are missing">
+       <figcaption>Line 10 is missing a closing tag.</figcaption>
+       <p>Closing tags are missing. For almost every element you need to make sure you have the opening tag and the closing tag there.</p>
+       <img src="images/html/closing-tags-3.png" alt="forward slash in closing tag in the wrong place">
+       <figcaption>The closing tag on line 14 has the forward slash after the element name.</figcaption>
+       <p>The other issue could be that you are writing your closing tags incorrectly by either forgetting the forward slash, putting the element name then the forward slash, or not matching the element names.</p>
+       <h3 id="html-eight">#8: Marking Up Semantically</h3>
+       <img src="images/html/semantic-1.png" alt="heading elements in paragraph elements">
+       <figcaption>The text on lines 44 and 49 should be heading level elements because they are headings. This code also has break tags, broken paragraphs, and missing closing tags.</figcaption>
+       <img src="images/html/semantic-2.png" alt="list as a series of h3s">
+       <figcaption>This is a list and that is recognized by giving it a class of list but is marked up in h3 elements.</figcaption>
+       <p>Marking the content up semantically is important because it helps with accessibility. Making headings in the text paragraphs in the HTML file or lists of items in the text into a series of paragraphs in the text does a disservice to those who need the elements to help them understand the site.</p>
+       <h3 id="html-nine">#9: Closing Tag Order</h3>
+       <img src="images/html/closing-order.png" alt="closing tags out of order from opening tags">
+       <figcaption>The order of the closing tags is wrong. Instead of closing the p and then the li it should close the li then the p.</figcaption>
+       <p>Careful attention needs to be paid to the order of the closing tags. Getting the order wrong could cause issues down your page as the browser tries to correct for the closing tag it was expecting to find.</p>
+       <h3 id="html-ten">#10: Using an ID Multiple Times</h3>
+       <img src="images/html/id.png" alt="The ID seven is used more than once">
+       <figcaption>The ID seven is used more than once. IDs should only be used once per file.</figcaption>
+       <p>IDs are the most specific selector to use and each ID should only be used once per page. You can have multiple different IDs on a page but you should not use the same ID more than once. If you find you need to reuse an ID, change it to a class. The same class can be used as many times as you need on a page.</p>
+       <h3 id="html-eleven">#11: Breaking Text Elements</h3>
+       <img src="images/html/breakingelements.png" alt="an h4 element broken across 3 lines">
+       <figcaption>An h4 element with the opening tag, content, and closing tag all on different lines.</figcaption>
+       <p>Some elements in HTML have the opening tag, content, and closing tag all on different lines. Things like the body element, head element, and divs all follow that logic. Text elements can all remain on the same line. This was specifically mentioned for the paragraph element in #2 above but it is the same idea for h1, h2, h3, h4, h5, h6, p, li, a, any many other elments that hold text. For these elements the opening tag, content, and closing tag should all be on the same line.</p>
+       <hr>
+       <h2>CSS Files</h2>
+       <h3 id="css-one">#1: Indents</h3>
+       <img src="images/css/indents-1.png" alt="indent missing for declarations">
+       <figcaption>Indents missing for declarations.</figcaption>
+       <img src="images/css/indents-2.png" alt="too big indent for declarations">
+       <figcaption>Indented too far for declarations on lines 15 to 19.</figcaption>
+       <p>Indenting is important for easily readable code for humans. It helps give the code structure and a kind of hierarchy. When indenting remember that anytime you declarations for a selector they should be indented one level more than the selector. Most commonly selectors will be aligned to the left margin of your editor. The exception for us is if you are writing styles in a media query which will indent the selector one level and the declarations one more level.</p>
+       <h3 id="css-two">#2: Empty Lines</h3>
+       <img src="images/css/empty-lines.png" alt="empty lines in the code">
+       <figcaption>Empty lines in the code. What should be 6 lines takes up 9 lines.</figcaption>
+       <p>While empty lines are technically not hurting anything they do take up some amount of file space and make your files longer than they need to be. It is a habit worth breaking.</p>
+       <h3 id="css-three">#3: Nonexistant Elements</h3>
+       <p>Writing styles for elements that don't exist.</p>
+       <h3 id="css-four">#4: Missing Semicolons</h3>
+       <img src="images/css/semicolons.png" alt="line missing semicolon">
+       <figcaption>Line 4 is missing a semicolon at the end which is breaking that line and the line below it.</figcaption>
+       <p>Each declaration in your CSS needs a semicolon at the end of it. A line with no semicolon will most likely break that line and the line beneath it. The only exception to this is the final declaration in a style.</p>
+       <h3 id="css-five">#5 Missing Curly Bracket</h3>
+       <img src="images/css/curlybracket.png" alt="missing closing curly bracket">
+       <figcaption>This style rule is missing the closing curly bracket.</figcaption>
+       <p>Each style rule needs a curly bracket that opens the styles after the selector and a closing curly bracket after all the declarations to close the styles.</p>
+       <h3 id="css-six">#6: Missing Unit on Numbers</h3>
+       <img src="images/css/units.png" alt="missing unit on number">
+       <figcaption>Line 46 is missing a unit on the number which means that margin is not working.</figcaption>
+       <p>All numbers that are specifying some kind of measurment need a unit (px, %, vw, em, rem, etc.) with the exception of 0. 0 is the same no matter what unit you are using so it does not need the unit.</p>
+       <h3 id="css-seven">#7: Declaration on Own Line</h3>
+       <img src="images/css/declaration.png" alt="declaration on the same line as the selector">
+       <figcaption>The selector and the first declaration are on the same line.</figcaption>
+       <p>Each declaration (a property and value in CSS) should be on its own line. The general set up is a selector followed by a space and a curly bracket, then all the declarations for the rule, each on their own line, and then a closing curly bracket on its own line.</p>
+     </main>
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>

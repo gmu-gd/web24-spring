@@ -1,0 +1,14 @@
+I"í<h4 id="e10-layouts">E10: Layouts</h4>
+<p>Code the first three layouts (checkerboard, 3 column grid, blog layout) in the E10 PDF linked on Blackboard using div elements and floats. If you code the fourth layout (tennis court) you will get 25 extra credit points and if you code the fifth layout (california case) you will get 50 points of extra credit.</p>
+
+<h5 id="requirements">Requirements</h5>
+<ul>
+  <li>3 layouts on your site (checkerboard, 3 column grid, blog layout)</li>
+  <li>Layouts are built with div elements</li>
+  <li>Div elements use the float property in their styles</li>
+  <li>All layouts share the same CSS file</li>
+  <li>No styles in the HTML file</li>
+</ul>
+
+<p><span class="due">Due Monday, March 29 by 11:59PM ET</span></p>
+:ET

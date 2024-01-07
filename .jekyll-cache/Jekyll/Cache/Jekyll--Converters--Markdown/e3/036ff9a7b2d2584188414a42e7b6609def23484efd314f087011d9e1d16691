@@ -1,0 +1,86 @@
+I"�&<p>This tutorial will go through the process of making a site responsive. It will use your main <strong>index.html</strong> file and its associated CSS file to make your homepage go from two columns on larger screens to one column on smaller screens.</p>
+
+<h3 id="step-1-open-your-repository-and-files"><span id="step1">Step 1: Open Your Repository and Files</span></h3>
+<p>Open your repository in Atom and then open up your main <strong>index.html</strong> file and CSS file associated with it by double clicking on the files in the tree view.</p>
+
+<p>Really the main focus here is the CSS file but we might want to reference what is happening in the HTML file so it is worth having them both open. Your HTML file should be set up similarly to the screenshot below.</p>
+
+<p><img src="/assets/img/t7/step1.png" alt="HTML file" title="Step 1" /></p>
+
+<h3 id="step-2-write-the-media-query"><span id="step2">Step 2: Write the Media Query</span></h3>
+<p>The first part of making a responsive site is writing the media query where we will add our responsive styles. Once we have the media query written we can start to add styles that will only happen at a certain range of screen sizes. In this case we designed the desktop version so we want the media query to happen when the screen gets smaller.</p>
+
+<p>Open up your site in a browser and start making the window smaller. There will come a point where the two columns on the homepage start to get too close together, start touching, or the columns are too narrow. Once you find that point, get the width of your browser by going to a site like <a href="http://howbigismybrowser.com/">howbigismybrowser.com</a>. Look at what the width is and remember that number for when you write your media query. For my site it is around 900px.</p>
+
+<p><img src="/assets/img/t7/step2-1.png" alt="900px wide window is where the site starts to get messy" title="Step 2" /></p>
+
+<p>You are going to write the media query in your CSS and you need to add it after all your main CSS styles. So scroll to the bottom of your CSS file and write <code class="language-plaintext highlighter-rouge">@media screen and (max-width: 900px) { }</code> with the number after <code class="language-plaintext highlighter-rouge">max-width</code> the number you came up with above.</p>
+
+<p><img src="/assets/img/t7/step2-2.png" alt="adding media query" title="Step 2" /></p>
+
+<p>Make sure when you add this you do not have a semicolon after the value for <code class="language-plaintext highlighter-rouge">max-width</code> and you include the curly brackets with an empty line between them like in the screenshot above.</p>
+
+<h3 id="step-3-from-two-columns-to-one"><span id="step3">Step 3: From Two Columns to One</span></h3>
+
+<p>Now that the media query is there you can start to write some styles for what happens when your site is viewed at a width of below whatever number you used. So you are writing styles to override your base styles when the screen is between 0px wide and your <code class="language-plaintext highlighter-rouge">max-width</code> value wide.</p>
+
+<p>Let’s start with something easy to make sure your media query is written correctly.</p>
+
+<h4 id="step-3a-check-if-the-media-query-works">Step 3a: Check if the Media Query Works</h4>
+
+<p>Inside the media query write a style to change the background color of the <code class="language-plaintext highlighter-rouge">body</code> to something different. Make sure when you start writing the selector you are indented one level because all of these style rules go inside the media query. I changed the background color for my <code class="language-plaintext highlighter-rouge">body</code> to a light grey.</p>
+
+<p><img src="/assets/img/t7/step3a1.png" alt="changing the baackground color in the media query" title="Step 3a" /></p>
+
+<p><img src="/assets/img/t7/step3a2.png" alt="result of CSS at below 900px wide on the page" title="Step 3a" /></p>
+
+<p>If your change doesn’t happen go back through step two and make sure you are writing your media query at the bottom of the CSS file and that you don’t have a semicolon after the value for <code class="language-plaintext highlighter-rouge">max-width</code>.</p>
+
+<p>If your background color changes, carry on.</p>
+
+<h4 id="step-3b-adding-style-rules-to-the-media-query">Step 3b: Adding Style Rules to the Media Query</h4>
+
+<p>The main thing we want to do with this page is to go from two columns to one column. At a certain point two columns isn’t practical on smaller screens so instead of having two super skinny columns we want to make one column for a better reading experience on the smaller screen.</p>
+
+<p>To do that we need to override some of our column styles from the main CSS. If you scroll up in your CSS to look at the styles you have that control your two columns you should see something similar to this:</p>
+
+<p><img src="/assets/img/t7/step3b1.png" alt="style rule for the columns" title="Step 3b" /></p>
+
+<p>Copy and paste that whole style rule down into your media query and delete the <code class="language-plaintext highlighter-rouge">body</code> style rule. Again making sure everything is properly indented.</p>
+
+<p><img src="/assets/img/t7/step3b2.png" alt="style rule for the columns in the media query" title="Step 3b" /></p>
+
+<h4 id="step-3c-deciding-what-needs-to-change">Step 3c: Deciding What Needs to Change</h4>
+
+<p>We don’t need all of these declarations in this rule so let’s decide what we want to change here. The main property that is allowing our two columns to work is the <span class="spoiler">width</span> property. You might have answered the <span class="spoiler">float</span> property which is sort of true but that property won’t do anything unless the other property allows it to. So since you really only need to work with the <code class="language-plaintext highlighter-rouge">width</code> property you can delete the other two declarations because you don’t need to change anything about them. Remember, the only styles in a media query are ones you are overriding/changing from your main styles or that are entirely new styles.</p>
+
+<p><img src="/assets/img/t7/step3c.png" alt="only the width declaration remains in the media query" title="Step 3c" /></p>
+
+<h4 id="step-3d-changing-the-value">Step 3d: Changing the Value</h4>
+
+<p>Now that only the <code class="language-plaintext highlighter-rouge">width</code> property remains, what does the value need to be to make the change we want? If 50% is giving the space necessary to float two columns next to each other and now we only want one column, the value for the <code class="language-plaintext highlighter-rouge">width</code> should be changed to <span class="spoiler">100%</span>. This way the column takes up the entire width of its container (the <code class="language-plaintext highlighter-rouge">main</code> element) and nothing can float next to it because there is no room.</p>
+
+<p><img src="/assets/img/t7/step3d1.png" alt="width declaration to 100% in media query" title="Step 3d" /></p>
+
+<p><img src="/assets/img/t7/step3d2.png" alt="page now displaying as a single column" title="Step 3d" /></p>
+
+<h4 id="step-3e-adding-new-styles">Step 3e: Adding New Styles</h4>
+
+<p>The final thing we want to do here is add any new styles that we might need to make the page look the best it can. In the screenshot above the word Project is too close to the last item in the list of exercises. That is an easy fix by adding a <span class="spoiler">margin</span> to the columns.</p>
+
+<p>In the style rule for the columns in the media query, add a margin on the bottom to separate the two stacked columns. In this case I am going to use <code class="language-plaintext highlighter-rouge">margin-bottom: 50px;</code> because that is the only margin I want to change. If this has other margins on it in my main styles and I write <code class="language-plaintext highlighter-rouge">margin: 0 0 50px 0;</code> it is going to override any existing margins on the top, left, and right and set them to zero. Not something that I probably want to happen.</p>
+
+<p><img src="/assets/img/t7/step3e1.png" alt="adding a bottom margin into the media query" title="Step 3e" /></p>
+
+<p><img src="/assets/img/t7/step3e2.png" alt="columns having more vertical separation" title="Step 3e" /></p>
+
+<h3 id="step-4-adjust-other-styles"><span id="step4">Step 4: Adjust Other Styles</span></h3>
+
+<p>Now that we have gone through the basic setup of making a page responsive, we can make other changes that need to happen when your page gets narrower. For my page I’m going increase the width of the <code class="language-plaintext highlighter-rouge">main</code> and <code class="language-plaintext highlighter-rouge">header</code> elements so there is more room for the type. I might decrease the size of the <code class="language-plaintext highlighter-rouge">h1</code> element so it isn’t quite so big. I could go through and change a lot more if I wanted to but the goal here is to make the existing designs look their best on a smaller screen, not redesign the site.</p>
+
+<p>And again, I’m only using using the properties I want to change or add so I don’t need to include <code class="language-plaintext highlighter-rouge">margin</code>, <code class="language-plaintext highlighter-rouge">padding</code>, or the <code class="language-plaintext highlighter-rouge">font-family</code> in the media query because I’m not making any changes to them. I also didn’t have to make any adjustments to the HTML file just reference it to make sure I’m changing the correct elements or classes.</p>
+
+<p><img src="/assets/img/t7/step4-1.png" alt="adjusting a few more styles in the media query" title="Step 4" /></p>
+
+<p><img src="/assets/img/t7/step4-2.png" alt="width main width, smaller type on live page" title="Step 4" /></p>
+:ET

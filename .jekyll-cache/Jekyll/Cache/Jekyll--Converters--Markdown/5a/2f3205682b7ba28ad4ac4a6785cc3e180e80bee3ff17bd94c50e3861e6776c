@@ -1,0 +1,3 @@
+I"o<h4 id="exercise-14-jquery--various">Exercise 14: jQuery  [various]</h4>
+<p><strong>Option 1</strong> – Interactions Create a single page that has at least three unique interactions on it using jQuery. The interactions should each use a different mouse event to start the interaction and each mouse event should do something different. For example, a mouse click could change the color of an object but hovering could change the position of some text. The content of the page should be a list of your top five favorite somethings. That could be your top five favorite songs, movies, places in the world, colors, etc.</p>
+:ET

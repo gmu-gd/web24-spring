@@ -1,113 +1,22 @@
-<!DOCTYPE html>
-<html lang="">
-<head>
-  <meta charset="UTF-8" />
-  <title>Web Design Spring 24</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/qew2rrr.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link rel="icon" href="favicon.png">
-</head>
-<body>
-  <main>
-    <header>
-      <h1>Intro to Web Design</h1>
-    </header>
-    <nav>
-        <ul>
-          <li><a href="#">Syllabus</a></li>        
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Schedules</a></li>
-        </ul>
-      </nav>
-    <section id="details">
-        <p class="marquee"><span><strong>Semester:</strong> Spring 2024 // <strong>Instructor:</strong> Michael McDermott // <strong>Location:</strong> Art and Design Building, Room 1020 // <strong>Timing:</strong> Thursdays from 1:30&ndash;4:10pm</span></p>
-    </section>
-    <section id="announcements">
-      <h2>News</h2>
-      <p>No current announcements</p>
-    </section>
-    <section id="feature">
-      <h2>Featured</h2>
-      <p>Featured student work to talk about in class relating to a specific exercise or project. Will be links not images.</p>
-    </section>
-    <section id="students">
-      <h2>Students</h2>
-      <ul>
-        <li><a href="#">Ada</a></li>        
-        <li><a href="#">Ayman</a></li>
-        <li><a href="#">Camille</a></li>
-        <li><a href="#">Claudia</a></li>
-        <li><a href="#">Eren</a></li>
-        <li><a href="#">Hope</a></li>
-        <li><a href="#">Jared</a></li>
-        <li><a href="#">Jessie</a></li>
-        <li><a href="#">Julianne</a></li>
-        <li><a href="#">Kerbey</a></li>
-        <li><a href="#">Logan</a></li>
-        <li><a href="#">Nancy</a></li>
-        <li><a href="#">Nomin</a></li>
-        <li><a href="#">Reema</a></li>
-        <li><a href="#">Ryan</a></li>
-        <li><a href="#">Tre'Lise</a></li>
-        <li><a href="#">Travis</a></li>
-        <li><a href="#">Venice</a></li>
-        <li><a href="#">Yinyu</a></li>
-        <li><a href="#">Zubair</a></li>
-      </ul>
-    </section>
-    <section id="assignments">
-      <h2>Assignments</h2>
-      <h3>Exercises</h4>
-      <ul>
-        <li><a href="#">E1: </a></li>        
-        <li><a href="#">E2: </a></li>
-        <li><a href="#">E3: </a></li>
-        <li><a href="#">E4: </a></li>
-        <li><a href="#">E5: </a></li>
-        <li><a href="#">E6: </a></li>
-        <li><a href="#">E7: </a></li>
-        <li><a href="#">E8: </a></li>
-        <li><a href="#">E9: </a></li>
-        <li><a href="#">E10: </a></li>
-        <li><a href="#">E11: </a></li>
-        <li><a href="#">E12: </a></li>
-        <li><a href="#">E13: </a></li>
-        <li><a href="#">E14: </a></li>
-        <li><a href="#">E15: </a></li>
-      </ul>
-      <h3>Projects</h4>
-      <ul>
-        <li><a href="#">P1: </a></li>        
-        <li><a href="#">P2: </a></li>
-      </ul>
-    </section>
-    <section id="tutorials">
-      <h2>Tutorials</h2>
-      <ul>
-        <li><a href="#">T1: </a></li>        
-        <li><a href="#">T2: </a></li>
-        <li><a href="#">T3: </a></li>
-        <li><a href="#">T4: </a></li>
-        <li><a href="#">T5: </a></li>
-        <li><a href="#">T6: </a></li>
-        <li><a href="#">T7: </a></li>
-        <li><a href="#">T8: </a></li>
-        <li><a href="#">T9: </a></li>
-        <li><a href="#">T10: </a></li>
-      </ul>
-    </section>
-    <section id="etc">
-      <h2>Et Cetera</h2>
-      <p>random things can go here, sites of interest, references, etc.</p>
-    </section>
-    <footer>
-      <p>Down here will be a space for all sorts of things. Perhaps something students will need to look at, featured work?</p>
-    </footer>
-  </main>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+---
+title: AVT217 – Intro to Web Design
+layout: default
+---
+
+{% include header.html %}
+<div id="top-content">
+  <div class="page-info">
+    <small>Spring 2024 // Thursday 1:30&ndash;4:10 // AB 1021</small>
+    <h1><a href="{{ '/' | relative_url}}" />Intro to Web Design</a></h1>
+  </div>
+  <div class="due-box">
+    {% include update-box.html %}
+  </div>
+  <div class="arrows">
+  </div>
+</div>
+<main>
+  <section>
+    {% include student-grid.html %}
+  </section>
+</main>

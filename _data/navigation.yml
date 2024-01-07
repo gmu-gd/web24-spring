@@ -1,0 +1,10 @@
+- name: Syllabus
+  link: /syllabus/
+- name: Schedule
+  link: /schedule/
+- name: Projects
+  link: /projects/
+- name: Tutorials
+  link: /tutorials/
+- name: Reference
+  link: /reference/

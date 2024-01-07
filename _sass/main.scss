@@ -1,0 +1,1178 @@
+/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+ Author's custom styles
+========================================================================== */
+
+$font-stack-body: sofia-pro, sans-serif;
+$font-stack-bighead: rig-solid-bold-halftone, sans-serif;
+$font-stack-student: rig-solid-bold-fill, sans-serif;
+$font-stack-headings: sofia-pro-soft, sans-serif;
+$primary-color: #E148FF; //lightish
+$secondary-color: #6ECDDC;
+$dark-color: #272727;
+$light-color: #FFFFFB;
+$error-color: #FF6B6C;
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background: $primary-color;
+}
+::-moz-selection {
+  background: $primary-color;
+}
+html {font-size: 16px;}
+
+body {
+  margin: 0;
+  font-family: $font-stack-body;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: $light-color;
+  color: $dark-color;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.interior {
+  background-color: $light-color;
+}
+.interior img, img {
+  // width: 100%;
+  max-width: 100%;
+}
+.interior img:hover, #lightbox:hover {
+  cursor: pointer;
+}
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 0 0 0 0;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-weight: bold;
+  float: left;
+}
+.tutorial-page ul, .single ul, .project ul {
+  text-decoration: none;
+  list-style-type: initial;
+  padding: 0 0 0 40px;
+  margin-bottom: 1.25em;
+}
+.tutorial-page li, .single li, .project li {
+    margin: 10px 0 0;
+    letter-spacing: 0;
+    float: none;
+    text-transform: initial;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+li a, .interior a {
+  border-bottom: 3px solid $primary-color;
+}
+li a:hover {
+  border-bottom: 3px solid $primary-color;
+}
+li a.active {
+  color: $dark-color;
+  border-bottom: 3px solid $secondary-color;
+}
+li a.active:hover, .interior li a:hover, .interior a:hover {
+  color: $dark-color;
+  border-bottom: 3px solid $secondary-color;
+}
+.interior h1 a, .interior h1 a:hover {
+  border-bottom: none;
+  color: $primary-color;
+}
+a.main-link, a.main-link:hover, .interior li a.main-link, .interior li a.main-link:hover {
+  border-bottom: none;
+}
+.due-box a, .due-box a:visited {
+  color: $light-color;
+  border-bottom: 3px solid $primary-color;
+}
+.due-box a:hover, .due-box a:active {
+  color: $light-color;
+  border-bottom: 3px solid $secondary-color;
+}
+header {
+  width: 100%;
+  background-color: $primary-color;
+  padding: 5px 0 10px;
+}
+nav {
+  width: 100%;
+  margin: 0;
+}
+nav ul {
+  display: flow-root;
+}
+nav li {
+  float: left;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+}
+nav li.mobile-nav:hover {
+  cursor: pointer;
+}
+nav #menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $light-color;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  padding: 25px 50px;
+}
+nav #menu li {
+  font-size: 2em;
+  margin: 30px 0;
+  float: none;
+}
+nav .mobile-hide {
+  display: none;
+}
+main, #head-contain {
+  width: 90vw;
+  margin: 0 auto;
+}
+#top-content {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content 20vh;
+  gap: 0;
+  grid-template-areas:
+    "pi"
+    "wd"
+    "ar";
+}
+.page-info {
+  grid-area: pi;
+  padding: 5vw;
+}
+.arrows {
+  grid-area: ar;
+  min-height: 200px;
+  overflow: hidden;
+  background: url(/assets/img/background.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $primary-color;
+}
+.due-box {
+  grid-area: wd;
+  grid-template-rows: max-content;
+  padding: 5vw;
+  background-color: $dark-color;
+  color: $light-color;
+}
+.about {
+  width: 90vw;
+  margin: 25px auto;
+}
+section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 5vw;
+  margin: 25px 0;
+}
+.single, .tutorial-page {
+  width: 100%;
+  margin: 50px 0;
+}
+.student, .tutorial {
+  // padding: 15px;
+  border: 3px solid $dark-color;
+  cursor: pointer;
+}
+.student {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack-student;
+  transition: .5s ease;
+}
+.student p {
+  text-align: center;
+  font-size: 2.7rem;
+  margin: 0;
+  padding: 25px 0;
+  // line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.student:hover, .tutorial:hover {
+  background-color: $primary-color;
+}
+.student.no-link, .student.no-link:hover {
+  background-color: $error-color;
+  cursor: default;
+}
+.student:nth-child(3n+3) {
+  margin-right: 0;
+}
+.tutorial a, .tutorial p, .tutorial h5 {
+  transition: color .5s ease;
+}
+.tutorial:hover a, .tutorial:hover p, .tutorial:hover h5 {
+  color: $light-color;
+}
+section.projects {
+  display: block;
+}
+.project {
+  margin: 25px 0;
+}
+.print {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.only-print {display: none;}
+.typeform-widget {
+  font-family: $font-stack-body;
+}
+
+footer {
+  display: none;
+}
+a {
+  transition: border-color .5s ease;
+}
+a, a:hover, a:active, a:visited {
+  color: $dark-color;
+  text-decoration: none;
+}
+h1 a, h1 a:hover, h1 a:active, h1 a:visited {
+  color: $dark-color;
+  // -webkit-text-stroke: 0 $dark-color;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin-top: .25em;
+  margin-bottom: 1.25em;
+}
+.description {
+  margin-bottom: 25px;
+}
+.section-title {
+  grid-column: span 1;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: $light-color;
+  margin: 0;
+}
+.interior .section-title {
+  color: $dark-color;
+}
+.section-title span {
+  background-color: $dark-color;
+  padding: 4px 6px;
+}
+#lightbox {
+  position: fixed;
+  top: 2vh;
+  left: 5vw;
+  width: 90vw;
+  height: 96vh;
+  background: url() no-repeat center center;
+  background-size: contain;
+  z-index: 99;
+}
+#lightbox-dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.8);
+  z-index: 50;
+}
+aside {
+  display: none;
+}
+.scroll-lock {
+  overflow: hidden !important;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.15;
+  font-family: $font-stack-headings;
+  color: $dark-color;
+}
+h1 {
+  font-family: $font-stack-bighead;
+  margin-top: 0;
+  font-size: 15vw;
+  line-height: .9em;
+  padding: 10px 0 0 0;
+  margin-left: -6px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  // -webkit-text-stroke: 0;
+  color: $primary-color;
+}
+.interior h1 {
+  color: $primary-color;
+}
+.interior h2.page-title {
+  font-family: $font-stack-bighead;
+  font-size: 4em;
+}
+h2 {
+  font-size: 2.441em;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  font-weight: 700;
+  margin-top: .25rem;
+}
+
+h3 {
+  font-size: 1.653em;
+  margin-top: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h2.section-title {
+  color: $primary-color;
+  font-size: 2.8em;
+}
+.home-due h3 {
+  color: $primary-color;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+.home-due h4 {
+  color: $light-color;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+.home-due h4.update {
+  color: $secondary-color;
+}
+.home-due h5 {
+  color: $light-color;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.home-due p {
+  font-family: $font-stack-body;
+  font-size: 16px;
+}
+h4 {
+  font-size: 1.2em;
+  margin-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+}
+.command {
+  background-color: $primary-color;
+  color: $light-color;
+  white-space: nowrap;
+  padding: 3px 3px;
+}
+.due {
+  color: $error-color;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ul.date-list {
+  padding: 0;
+  margin-left: 0;
+}
+.date-list li {
+  list-style-type: none;
+}
+.date {
+  color: $secondary-color;
+}
+.spoiler {
+  color: white;
+  white-space: pre-wrap;
+  font-family: monospace;
+  border: 3px solid $dark-color;
+  margin: 3px 3px;
+}
+.spoiler::selection {
+  background-color: $dark-color;
+}
+code {
+  color: $light-color;
+  background-color: $dark-color;
+  white-space: pre-wrap;
+  padding: 3px 3px;
+}
+small, .text-small {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.page-info small {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h1 .info {
+  font-size: 16px;
+  // -webkit-text-stroke: 0;
+  color: $dark-color;
+  letter-spacing: 1px;
+}
+.link-small {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  border-bottom: 3px solid $dark-color;
+}
+hr {
+  border-top: 3px solid $primary-color;
+  margin: 25px 0 50px;
+}
+.due-box hr {
+  border-top: 3px dotted $primary-color;
+  margin: 25px 0;
+}
+// form styles
+form {
+  width: 100%;
+}
+label {
+  font-size: 1.2em;
+}
+label, input, textarea {
+  width: 100%;
+}
+input, textarea {
+  margin: 5px 0 25px;
+  padding: 3px;
+  font-family: $font-stack-body;
+  border: 2px solid $dark-color;
+}
+input#portrait-but {
+  border: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+input.slider {
+  border: none;
+}
+input:focus, textarea:focus, form.submitted input:invalid:focus, form.submitted textarea:invalid:focus {
+  outline: none;
+  border: 2px solid $primary-color;
+  box-shadow: 0 0 5px $primary-color;
+}
+.slidecontainer input:focus {
+  outline: none;
+  border: 2px solid $secondary-color;
+  box-shadow: 0 0 5px $secondary-color;
+}
+textarea {
+  height: 100px;
+}
+form button {
+  margin: 70px 0 0;
+  font-size: 2em;
+  padding: 3px 15px 5px 14px;
+  transition: .5s;
+}
+form button#sub-but , form button#sub-but:visited, form button#sub-but:visited, form button#sub-but:hover {
+  color: $dark-color;
+}
+form button:hover {
+  background-color: $primary-color;
+}
+input::file-selector-button  {
+  padding: 3px 7px 5px 6px;
+}
+form button, input::file-selector-button  {
+  border: 2px solid $dark-color;
+  background: none;
+  font-family: $font-stack-headings;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  margin: 0 0 25px 0;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: $secondary-color;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: $dark-color;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: $dark-color;
+  cursor: pointer;
+  opacity: 0;
+}
+.slide-clicked::-webkit-slider-thumb {
+  opacity: 1;
+}
+.slide-clicked::-moz-range-thumb {
+  opacity: 1;
+}
+.slide-invalid {
+  background-color: tomato;
+}
+ul.range-labels {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.range-labels li {
+  font-size: .8em;
+  margin-top: 0;
+}
+.label-center {
+  text-align: center;
+}
+.label-right {
+  text-align: right;
+}
+form.submitted input:invalid, form.submitted textarea:invalid, form.submitted input#portrait-but:invalid::file-selector-button {
+  border: 2px solid tomato;
+}
+form.submitted .special input#portrait-but:invalid {
+  border: none !important;
+}
+p#warning {
+  font-size: .8em;
+  margin: 10px 0 25px;
+}
+.w-hidden {
+  visibility: hidden;
+}
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+ @media only screen and (min-width: 520px) {
+   header {
+     position: relative;
+   }
+   main, #head-contain {
+     width: 95vw;
+   }
+   .page-info {
+     padding: 2.5vw;
+   }
+   .due-box {
+     padding: 2.5vw;
+   }
+   section {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 2.5vw 2.5vw;
+     margin: 50px 0;
+   }
+   .section-title {
+     grid-column: span 2;
+   }
+   .student p {
+     font-size: 2.2rem;
+   }
+   h1 a, h1 a:hover, h1 a:active, h1 a:visited {
+     color: $dark-color;
+     // -webkit-text-stroke: 3px $dark-color;
+   }
+   .interior h1 a, .interior h1 a:hover {
+     border-bottom: none;
+     color: $light-color;
+   }
+   h1 {
+     margin-top: 0;
+     text-transform: uppercase;
+     letter-spacing: .1rem;
+     font-weight: 700;
+     color: $dark-color;
+     // -webkit-text-stroke: 3px $dark-color;
+   }
+   ul {
+     text-decoration: none;
+     list-style-type: none;
+     text-align: left;
+   }
+   li {
+     padding: 0;
+     margin: 15px 0 0;
+     text-transform: uppercase;
+     letter-spacing: .05rem;
+     font-weight: bold;
+     float: none;
+   }
+}
+@media only screen and (min-width: 620px) {
+  .student p {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 630px) {
+  h1 {
+    font-size: 16vw;
+    line-height: .9em;
+    padding: 20px 0 0 0;
+    margin-left: -6px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+  nav ul {
+    display: flow-root;
+  }
+  nav li.mobile-nav {
+    display: none;
+  }
+  nav #menu {
+    position: relative;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    z-index: initial;
+    padding: 0;
+    background-color: none;
+    margin-top: 10px;
+  }
+  nav #menu li {
+    float: left;
+    margin: 0 10px;
+    font-size: 1em;
+  }
+  nav #menu li:first-of-type {
+    margin: 0 10px 0 0;
+  }
+  nav .mobile-hide {
+    display: block;
+  }
+  main, .about, #head-contain {
+    width: 95vw;
+  }
+  .tutorial-page, .single {
+    width: 75%;
+  }
+  h1 {
+    font-size: 16vw;
+    line-height: .9em;
+    padding: 20px 0 0 0;
+    margin-left: -9px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+    /* Style adjustments for viewports that meet the condition */
+    main, .about, #head-contain {
+      width: 95vw;
+      display: flow-root;
+    }
+    #top-content {
+      grid-template-columns: 29vw 29vw 1fr;
+      grid-template-rows: max-content max-content;
+      gap: 0;
+      grid-template-areas:
+        "pi pi wd"
+        "ar ar wd";
+    }
+    .tutorial-page {
+      width: 600px;
+      float: left;
+    }
+    .single {
+      width: 900px;
+    }
+    .sub-space {
+      margin-left: 350px;
+    }
+    aside {
+      display: block;
+      float: left;
+      max-width: 300px;
+      margin: 50px 50px 0 0;
+    }
+    .sub-fixed {
+      position: fixed;
+      top: 50px;
+    }
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2.5vw 2.5vw;
+      margin: 50px 0;
+    }
+    .section-title {
+      grid-column: span 3;
+    }
+    h1 {
+      font-size: 12vw;
+      line-height: .9em;
+      padding: 20px 0 0 0;
+      margin-left: -7px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    /* Style adjustments for viewports that meet the condition */
+    main, #head-contain {
+      position: relative;
+      left: 0;
+    }
+    #top-content {
+      grid-template-columns: 22vw 22vw 22vw 1fr;
+      grid-template-rows: max-content max-content;
+      gap: 0;
+      grid-template-areas:
+        "pi pi pi wd"
+        "ar ar ar wd";
+    }
+    section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2.5vw 2.5vw;
+      margin: 50px 0;
+    }
+    .about {
+      width: 500px;
+      padding: 40px;
+    }
+    .section-title {
+      grid-column: span 4;
+    }
+    h1 {
+      font-size: 9vw;
+      line-height: .9em;
+      padding: 20px 0 0 0;
+      margin-left: -10px;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    /* Style adjustments for viewports that meet the condition */
+    main, #head-contain {
+      width: 87.5vw;
+    }
+    .page-info {
+      padding: 2.5vw 6.25vw;
+    }
+    .due-box {
+      padding-right: 6.25vw;
+    }
+    h1 {
+      font-size: 10vw;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ============================================
+   Temporary Styles
+   ============================================ */
+body {
+  background-color: $light-color;
+}
+.temp-form {
+  padding: 50px 12.5vw;
+  color: $dark-color;
+}
+.temp-header {
+  background-color: $dark-color;
+  padding: 50px 12.5vw;
+}
+.temp-header h1 {
+  color: $light-color;
+  text-align: center;
+}
+.temp-thanks, #random-list {
+  background-color: $primary-color;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 25vh 50px;
+}
+.temp-thanks h1, .temp-thanks h2 {
+  color: $dark-color;
+  text-align: center;
+}
+.temp-thanks h2 {
+  font-size: 1.5em;
+}
+#random-list {
+  padding-top: 50px;
+}
+#random-list a, #random-list a:visited, #random-list a:active {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 4px solid $dark-color;
+  padding: 2px 7px 5px;
+  transition: 1s background-color ease;
+}
+#random-list a:hover {
+  cursor: pointer;
+  background-color: $secondary-color;
+}
+#generate {
+  text-align: center;
+  margin: 25px 0;
+}
+#random-list ol {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  width: 220px;
+}
+#random-list li {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 5px 0;
+  float: none;
+}
+@media only screen and (min-width: 768px) {
+  .temp-form {
+    padding: 50px 20vw;
+  }
+  .temp-thanks h2 {
+    font-size: 3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .temp-form {
+    padding: 50px 25vw;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .temp-form {
+    padding: 50px 30vw;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    article a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    article.tutorial, article.student {
+      border-top: 20px solid $dark-color;
+      border-bottom: 20px solid $dark-color;
+      margin: 50px 0;
+      padding: 50px 50% 50px 0;
+    }
+    footer {
+      display: block;
+      width: 50%;
+    }
+    h1 {
+      font-size: 100px;
+      color: rgba(0,0,0,0) !important;
+    }
+    p:last-of-type{margin-bottom: 0;}
+    .no-print {display: none;}
+    .only-print {display: block;}
+    .print-underline {border-bottom: 2px solid $dark-color;}
+}

@@ -1,0 +1,20 @@
+I"<h3 id="description">Description</h3>
+<p>As a designer, you are often only responsible for providing the design of a site and not actually coding that design. Now is your chance to take all of the knowledge you have gain from this class and put it to use in a single project. You will code at least the homepage of the site you designed for project 2. It is up to you, your time, and your abilities as to whether you also want to code any of the interior pages you designed. The live site should look as close to the designs as possible while sticking to good coding principles. If there are elements that you are not able to code the coded site can be simplified from the designs. No matter how many pages you code the navigation, links, and any other interactive features should work as planned.</p>
+
+<h4 id="requirements">Requirements</h4>
+<ul>
+  <li>At least the homepage of project 2 coded</li>
+  <li>Site is responsive</li>
+  <li>No styles in the HTML file</li>
+  <li>Working hover states</li>
+</ul>
+
+<h3 id="checkpoints">Checkpoints</h3>
+<ul>
+  <li>March 30: Start</li>
+  <li>April 6: All content populated and structured in the HTML file</li>
+  <li>April 13: Mobile or desktop size styles in CSS file</li>
+  <li>April 20: Responsive styles in CSS file</li>
+  <li>May 1: Due</li>
+</ul>
+:ET

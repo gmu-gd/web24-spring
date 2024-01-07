@@ -1,0 +1,87 @@
+I"2<p>This tutorial will go through the set up every HTML page uses (steps 1–6) and how to get text to display on screen. It will also help you get <em>E1: 20 Questions</em> started if you need some extra guidance.</p>
+
+<p>Note: depending on the width of your screen some text that represents code (white text with a black background) might be broken across two lines. If that happens know that the actual code is not broken across two lines, it should all be on one line. Check the screenshots at the end of each step to compare your code to the correct code.</p>
+
+<h3 id="step-1-create-html-file"><span id="step1">Step 1: Create HTML file</span></h3>
+
+<p>Open your text editor and start a new file. To create a new file you can go to <span class="command"><em>File &gt; New File</em></span> or use <span class="command"><em>cmd+n</em></span>. Now before you do any typing in the document you need to save the file by going to <span class="command"><em>File &gt; Save</em></span> or using the key command <span class="command"><em>cmd+s</em></span>. When you save a file you need to name the file and give it a file type/extension. Name this file <strong>e1.html</strong> and save it to your desktop. <strong>e1</strong> is the file name and <strong>.html</strong> is the file extension. Remember that you need to type the file extension so the text editor knows what kind of file it is working with.</p>
+
+<p><img src="/assets/img/t1/step1.png" alt="image of Atom's save screen" title="Step 1" /></p>
+
+<h3 id="step-2-add-doctype"><span id="step2">Step 2: Add doctype</span></h3>
+<p>Now that your text editor knows what kind of file it is working with you can start writing in HTML. On line 1 of your document type <code class="language-plaintext highlighter-rouge">&lt;!DOCTYPE html&gt;</code>. This is the document declaration type which lets the browser know which HTML specification to use to interpret the document. In this case you are writing in HTML5.</p>
+
+<p><img src="/assets/img/t1/step2.png" alt="image of adding the document declaration type to the document" title="Step 2" /></p>
+
+<h3 id="step-3-add-html-element"><span id="step3">Step 3: Add html element</span></h3>
+<p>Now that the browser knows what HTML specification you are writing in you can start to write your HTML. The first element is going to be the <code class="language-plaintext highlighter-rouge">html</code> element. The <code class="language-plaintext highlighter-rouge">html</code> element is called the root element because it contains all the elements in the document.</p>
+
+<p>On line 2 write the opening tag <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> and on line 3 write the closing tag <code class="language-plaintext highlighter-rouge">&lt;/html&gt;</code>. Remember that almost every HTML element you write will have an opening tag and a closing tag.</p>
+
+<p>Save the document by pressing <span class="command"><em>cmd+s</em></span>. Saving with the key command instead of going to <span class="command"><em>File &gt; Save</em></span> is going to be faster and make saving easier.</p>
+
+<p><img src="/assets/img/t1/step3.png" alt="image of adding the html element to the document" title="Step 3" /></p>
+
+<h3 id="step-4-add-head-element"><span id="step4">Step 4: Add head element</span></h3>
+<p>There are a few more elements you need to add before you can start adding content to the page. Put your cursor at the end of line 2 and press <span class="command"><em>return</em></span> which will add a new blank line between the <code class="language-plaintext highlighter-rouge">html</code> element. Now press <span class="command"><em>tab</em></span> to indent the cursor one level on line 3. Indenting is an important part of coding that allows humans to quickly see the structure of a document. Now add the <code class="language-plaintext highlighter-rouge">head</code> element to your page. On the indented line 3 write the opening tag <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> and then press <span class="command"><em>return</em></span> and write the closing tag <code class="language-plaintext highlighter-rouge">&lt;/head&gt;</code> on the indented line 4. Depending on your code editor you might need to indent the line one level yourself by pressing <span class="command"><em>tab</em></span>. Once you have the opening and closing tag on the page make sure the opening and closing tags are at the same indent level as each other.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">head</code> element contains elements that pertain to the document that are not rendered as part of the content, such as its title, style sheets, scripts, and metadata.</p>
+
+<p><img src="/assets/img/t1/step4.png" alt="image of adding the head element to the document" title="Step 4" /></p>
+
+<h3 id="step-5-add-meta-and-title-elements"><span id="step5">Step 5: Add meta and title elements</span></h3>
+<p>Put your cursor at the end of line 3 and press <span class="command"><em>return</em></span> which will add a new blank line between the <code class="language-plaintext highlighter-rouge">head</code> element. Depending on your text editor this might automatically indent or you might need to indent it to two levels. The indent this time is two levels because you are writing inside the <code class="language-plaintext highlighter-rouge">head</code> element.</p>
+
+<p>On line 4 write the meta tag that specifies the character encoding used in the document <code class="language-plaintext highlighter-rouge">&lt;meta charset="utf-8"&gt;</code>. Notice this element does not have a closing tag.</p>
+
+<p>At the end of line 4 press <span class="command"><em>return</em></span> and make sure you are two indent levels in and add the <code class="language-plaintext highlighter-rouge">title</code> element. This can be done all on one line and will look something like this <code class="language-plaintext highlighter-rouge">&lt;title&gt;E1&lt;/title&gt;</code>. The <code class="language-plaintext highlighter-rouge">title</code> element has an opening tag <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code>, some content (in this case E1), and a closing tag <code class="language-plaintext highlighter-rouge">&lt;/title&gt;</code>. The title should describe the title of the page you are working on and appears in the tab of the browser which you will see once you preview the page.</p>
+
+<p><img src="/assets/img/t1/step5.png" alt="image of adding a meta element and the title element to the document" title="Step 5" /></p>
+
+<h3 id="step-6-add-body-element"><span id="step6">Step 6: Add body element</span></h3>
+<p>The last step before you start adding content to the page is adding the <code class="language-plaintext highlighter-rouge">body</code> element. The <code class="language-plaintext highlighter-rouge">body</code> element contains everything you want to show up in the browser window.</p>
+
+<p>Add the <code class="language-plaintext highlighter-rouge">body</code> element below the closing tag of the <code class="language-plaintext highlighter-rouge">head</code> element. The <code class="language-plaintext highlighter-rouge">body</code> element needs an opening tag <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> and a closing tag <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> and should be at the same indent level as the <code class="language-plaintext highlighter-rouge">head</code> element. If you want you can leave a blank line between the opening and closing tag since you will be adding content there.</p>
+
+<p>If you haven’t saved since step 3 now might be a good time (<span class="command"><em>cmd+s</em></span>).</p>
+
+<p><img src="/assets/img/t1/step6.png" alt="image of adding the body element to the document" title="Step 6" /></p>
+
+<h3 id="step-7-add-content"><span id="step7">Step 7: Add content</span></h3>
+<p>Now that your document is setup you can start adding content. For a reference of text elements we have talked about so far, look at the Lesson 1.2 PDF on Blackboard. Remember, every piece of text you want to show up on the live page should be contained in an text element.</p>
+
+<p>The first bit of content you should add inside the <code class="language-plaintext highlighter-rouge">body</code> element is a some kind of main heading that tells a viewer what this page is. The best element for this is the <code class="language-plaintext highlighter-rouge">h1</code> element which is used to identify the primary heading on the page. Since you might be working on Exercise 1, perhaps your text could be <em>E1: 20 Questions</em> and look something like this <code class="language-plaintext highlighter-rouge">&lt;h1&gt;E1: 20 Questions&lt;/h1&gt;</code>. Remember to include the opening tag <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, content (E1: 20 Questions), and closing tag <code class="language-plaintext highlighter-rouge">&lt;/h1&gt;</code> here. This should be written on line 8, inside the <code class="language-plaintext highlighter-rouge">body</code> element, and be indented 2 levels.</p>
+
+<p><img src="/assets/img/t1/step7a.png" alt="image of adding an h1 element to the document" title="Step 7a" /></p>
+
+<p>Next add a heading identifying the question number, a question, and your answer to that question. Remember, the way shown below is one way to approach this but like with most things in design and coding there are many solutions.</p>
+
+<p>So what text element should you choose if you want text that says “Question 1”?</p>
+
+<p>How about an <code class="language-plaintext highlighter-rouge">h2</code> element? Since you used an <code class="language-plaintext highlighter-rouge">h1</code> for your primary heading using the next heading element seems like a logical choice. You can also use this heading element as many times as you want so it will work nicely as a heading element for identifying the question number.</p>
+
+<p>Make sure you are writing in the body element, on a new line below your <code class="language-plaintext highlighter-rouge">h1</code> element, indented to the proper level (two levels), and write <code class="language-plaintext highlighter-rouge">&lt;h2&gt;Question 1&lt;/h2&gt;</code>.</p>
+
+<p>Don’t forget to save (<span class="command"><em>cmd+s</em></span>)!</p>
+
+<p><img src="/assets/img/t1/step7b.png" alt="image of adding an h2 element to the document" title="Step 7b" /></p>
+
+<p>Finally add the question text and your answer. Again, there are a lot of ways you could do this but here is one approach using the <code class="language-plaintext highlighter-rouge">p</code> element (<code class="language-plaintext highlighter-rouge">p</code> stands for paragraph). Make sure you replace the text inside the <code class="language-plaintext highlighter-rouge">p</code> element below with an actual question and an actual answer. Each <code class="language-plaintext highlighter-rouge">p</code> element should be on its own line and indented to the proper level (two levels).</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;p&gt;Q: This is the text for the question?&lt;/p&gt;</code>
+<code class="language-plaintext highlighter-rouge">&lt;p&gt;A: This is the answer for the question.&lt;/p&gt;</code></p>
+
+<p><img src="/assets/img/t1/step7c.png" alt="image of adding a p element to the document" title="Step 7c" /></p>
+
+<h3 id="step-8-previewing-the-page"><span id="step8">Step 8: Previewing the page</span></h3>
+
+<p>Now that you have a document with the proper structure and content with the proper mark up it’s time to see what the page looks like! Make sure you have saved (<span class="command"><em>cmd+s</em></span>) before you preview the page or you won’t see the most current file.</p>
+
+<p>One way to preview your file is to find the file on your desktop and drag it into a browser or double click on it. That should open it up in your default browser. The other way is to click and drag the icon next to the file name in the top bar of the Atom window into the browser. This is a little tricky sometimes but once you get the hang of it is a lot faster. However you get the file open in the browser you should have something that looks like this.</p>
+
+<p><img src="/assets/img/t1/step8.png" alt="image of the live preview of the coded page" title="Step 8" /></p>
+
+<p>This page is using the default browser styles which for now is fine. The goal of this lesson is to create a simple HTML page with a good structure and marked up correctly. As the class goes on you will learn more about styling the page.</p>
+
+<p>To finish the exercise you can repeat step 7 for each new question until you have all your questions and answers all on the page.</p>
+:ET

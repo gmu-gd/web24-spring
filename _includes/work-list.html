@@ -1,0 +1,23 @@
+<h3>Projects</h3>
+{% assign curDate = site.time | date: '%s' %}
+{% for post in site.categories.projects %}
+  {% assign postStartDate = post.date | date: '%s' %}
+  {% if postStartDate <= curDate %}
+  <article class="single" id=" {{post.slug}} ">
+    <h4> {{ post.title }} </h4>
+    <p class="description"> {{ post.excerpt | strip_html }} </p>
+    <p><a href="{{ post.url | relative_url }}">Full Project Description</a></p>
+    <hr>
+  </article>
+  {% endif %}
+{% endfor %}
+<h3>Exercises</h3>
+{% for post in site.categories.exercises %}
+  {% assign postStartDate = post.date | date: '%s' %}
+  {% if postStartDate <= curDate %}
+  <article class="single" id="{{post.slug}}">
+    {{ post.content }}
+    <hr>
+  </article>
+  {% endif %}
+{% endfor %}

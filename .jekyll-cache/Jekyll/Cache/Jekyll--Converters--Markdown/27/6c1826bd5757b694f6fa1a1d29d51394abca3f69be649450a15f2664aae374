@@ -1,0 +1,106 @@
+I"7<p>This tutorial will get the homepage of your repository setup to be an archive of the work you are creating for this class.</p>
+
+<h3 id="step-1-set-up-the-html-file"><span id="step1">Step 1: Set up the HTML file</span></h3>
+<p>The first step is opening up your text editor, creating a new file, and saving it in the root directory of your repository as index.html. Once you have done that add in the basic HTML set up (steps 1 through 6 of <a href="/tutorials/t1">tutorial 1</a>). Make sure you make the text in the <code class="language-plaintext highlighter-rouge">title</code> element is something useful. At the end your file should look something like the image below.</p>
+
+<p><img src="/assets/img/t3/step1.png" alt="basic html setup in Atom" title="Step 1" /></p>
+
+<h3 id="step-2-adding-content"><span id="step2">Step 2: Adding Content</span></h3>
+<p>Now that the file is set up you can add some content. This page is going to be a list of links to the work for the class. It should have some large text at the top to give the page a title and then a bunch of links underneath that. All of this content is going to go in the <code class="language-plaintext highlighter-rouge">body</code> element.</p>
+
+<h4 id="step-2a-add-your-main-heading">Step 2a: Add your main heading</h4>
+<p>Start with a title for your page using the <code class="language-plaintext highlighter-rouge">h1</code> element. Something like <code class="language-plaintext highlighter-rouge">&lt;h1&gt;Michael's Work&lt;/h1&gt;</code> or some other way to identify this page as yours.</p>
+
+<p><img src="/assets/img/t3/step2a.png" alt="h1 element added to body" title="Step 2a" /></p>
+
+<h4 id="step-2b-add-an-unordered-list">Step 2b: Add an Unordered List</h4>
+
+<p>There are a lot of different ways to add links to a document. Since this going to be a list of links and we want to markup the document semantically, a list element makes sense. A list with numbers next to it isn’t important here so use an unordered list element, <code class="language-plaintext highlighter-rouge">&lt;ul&gt;...&lt;/ul&gt;</code>. Add the opening tag for the unordered list on the line beneath the <code class="language-plaintext highlighter-rouge">h1</code> element and the closing tag for the unordered list two lines beneath that. This leaves space to add a list item inside the unordered list. All of the elements inside the body element are at the same indent level so far.</p>
+
+<p><img src="/assets/img/t3/step2b.png" alt="ul element added to the body" title="Step 2b" /></p>
+
+<h4 id="step-2c-add-a-list-item">Step 2c: Add a List Item</h4>
+
+<p>The text inside a list is all contained in the list item element, <code class="language-plaintext highlighter-rouge">&lt;li&gt;...&lt;/li&gt;</code>. On the line between the opening and closing tags for the unordered list, add a list item with some text that identifies this list item as Exercise 1, something like, “E1: 20 Questions”. Note that this <code class="language-plaintext highlighter-rouge">li</code> element is indented another level because it is a child of the <code class="language-plaintext highlighter-rouge">ul</code> element. Also a good time to save, <span class="command"><em>cmd+s</em></span>, if you haven’t yet.</p>
+
+<p><img src="/assets/img/t3/step2c.png" alt="li element added inside the ul element" title="Step 2c" /></p>
+
+<h4 id="step-2d-add-more-list-items">Step 2d: Add More List Items</h4>
+<p>Add a new line beneath the <code class="language-plaintext highlighter-rouge">li</code> for E1 and make an <code class="language-plaintext highlighter-rouge">li</code> for E2. Repeat this process until you have list items for E1 through E5. All of these should be at the same level indent as the first <code class="language-plaintext highlighter-rouge">li</code> because they are all children of the <code class="language-plaintext highlighter-rouge">ul</code> element. Don’t forget to save.</p>
+
+<p><img src="/assets/img/t3/step2d.png" alt="more li elements" title="Step 2d" /></p>
+
+<h3 id="step-3-add-links"><span id="step3">Step 3: Add Links</span></h3>
+<p>If you haven’t previewed the page yet you might want to. You should have something that looks like:</p>
+
+<p><img src="/assets/img/t3/step3.png" alt="html file previewed in browser" title="Step 3" /></p>
+
+<p>This works to show what the work is but the we can’t click on anything to take us to the work. To make that happen we need to add some anchor elements, <code class="language-plaintext highlighter-rouge">&lt;a&gt;...&lt;/a&gt;</code>.</p>
+
+<h5 id="step-3a-wrap-list-item-text-in-an-anchor-element">Step 3a: Wrap List Item Text in an Anchor Element</h5>
+
+<p>Put your cursor between the opening tag and the content for the first list item you have. That means the cursor should be after <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> and before “E1…”. Add the opening tag for the anchor element here. At the end of the text but before the closing tag for the list item add the closing tag for the anchor element.</p>
+
+<p><img src="/assets/img/t3/step3a.png" alt="first list item wrapped in an anchor element" title="Step 3a" /></p>
+
+<h5 id="step-3b-add-an-attribute">Step 3b: Add an Attribute</h5>
+
+<p>Now there is one more part of an anchor element that needs to be added in order for the link to actually work. If you said the <code class="language-plaintext highlighter-rouge">href</code> attribute you are correct. In the opening tag for the anchor element but your cursor after the <code class="language-plaintext highlighter-rouge">a</code> and before the <code class="language-plaintext highlighter-rouge">&gt;</code>. Add a space and then type <code class="language-plaintext highlighter-rouge">href="#"</code>. The code should look like the first screenshot and if you preview the page the first list item should change to blue with an underline. If you click that link nothing will happen because it doesn’t have a path yet but it should look like the default link now.</p>
+
+<p><img src="/assets/img/t3/step3b1.png" alt="first anchor element with href attribute" title="Step 3b1" />
+<img src="/assets/img/t3/step3b2.png" alt="previewed page in browser showing link styles" title="Step 3b2" /></p>
+
+<h3 id="step-4-add-e1-to-repository"><span id="step4">Step 4: Add E1 to Repository</span></h3>
+
+<p>In order for the link to work, Exercise 1 needs to be added to your repository. The first thing you want to do is add a folder in your repository (root directory) where the E1 file will live. There are many ways to add a folder so do it however you are comfortable. Name the folder whatever you want remembering all the rules about naming folders and files, an easy name might be <strong>e1</strong>.</p>
+
+<p><img src="/assets/img/t3/step4.png" alt="e1 folder in root directory" title="Step 4" /></p>
+
+<p>Once you have the <strong>e1</strong> folder you can add your HTML file for Exercise 1 into it. Once you add the E1 file to the <strong>e1</strong> folder change the name of it to <strong>index.html</strong>.</p>
+
+<h3 id="step-5-add-the-link-path"><span id="step5">Step 5: Add the Link Path</span></h3>
+
+<p>Now that the Exercise 1 file is in the repository you can add the path to the E1 link on your homepage. You should be back in Atom looking at your <strong>index.html</strong> file that is in your root directory. That should be the file that has the list of exercises we added earlier.</p>
+
+<p>Find the anchor element wrapped around “E1: 20 Questions”. Delete the “#” we added when we first wrote the <code class="language-plaintext highlighter-rouge">href</code> attribute and change it to the correct path to get to your Exercise 1 file. Take a second to try and write it yourself and once you have something highlight the box to see what the path should be <span class="spoiler">e1/index.html</span>.</p>
+
+<p>A note: This path is dependent on the file and folder names this tutorial uses and the location of those files and folders. If you named something differently or put something in a different location, your path will be different than the one above.</p>
+
+<p>Once you have the path filled in preview the page in your browser and test out the link. Did it take you to your E1 file? If it did, great! If it didn’t, check to make sure your spelling is correct, capitalization, etc. and see if you can fix the error.</p>
+
+<p><img src="/assets/img/t3/step5.png" alt="href value filled in for first anchor element" title="Step 5" /></p>
+
+<p>This is the same process to add links to the other list items in your unordered list. Once you have completed them, add a folder to the repository and then add any files you need displayed in there.</p>
+
+<h3 id="step-6-add-css"><span id="step6">Step 6: Add CSS</span></h3>
+<p>The page works but it doesn’t look very good. How can you make it look better? CSS! In your repository add a <strong>css</strong> folder. Once you have the folder make a new file in Atom and save it in your newly created <strong>css</strong> folder as <strong>main.css</strong>. This file will now allow you to control the look of your repository’s homepage. If you need a reminder on how CSS works make sure you have another look at the 2.3: External Style Sheets PDF on Blackboard.</p>
+
+<h4 id="step-6a-add-styles">Step 6a: Add Styles</h4>
+<p>On line one of the newly created CSS file add a selector for something you want to style. In this case, style the <code class="language-plaintext highlighter-rouge">body</code> element and type <code class="language-plaintext highlighter-rouge">body {</code> on line 1 and then close the style on line 3 with a closing curly bracket, <code class="language-plaintext highlighter-rouge">}</code>.</p>
+
+<p><img src="/assets/img/t3/step6a1.png" alt="body style in CSS" title="Step 6a1" /></p>
+
+<p>Now add a declation in there (<code class="language-plaintext highlighter-rouge">property: value;</code>) to change the <code class="language-plaintext highlighter-rouge">background-color</code> for the <code class="language-plaintext highlighter-rouge">body</code>. This allows a quick, easy check to see if the CSS file is correctly linked to the HTML file. Add the property <code class="language-plaintext highlighter-rouge">background-color</code> with the value of <code class="language-plaintext highlighter-rouge">yellow</code> to line two of the CSS file. Make sure it is indented one level because this declaration is inside the <code class="language-plaintext highlighter-rouge">body</code> style rule.</p>
+
+<p><img src="/assets/img/t3/step6a2.png" alt="changing the background color of the body in CSS" title="Step 6a2" /></p>
+
+<p>Save the CSS file and preview your main HTML file again. Did anything change? No? Any ideas why? If you guessed that the CSS file isn’t connected to the HTML file yet you would be correct!</p>
+
+<h4 id="step-6b-connect-css-and-html-files">Step 6b: Connect CSS and HTML Files</h4>
+
+<p>To connect the two files together you need to add the <code class="language-plaintext highlighter-rouge">link</code> element to the HTML file. The <code class="language-plaintext highlighter-rouge">link</code> element is an empty element that goes in the <code class="language-plaintext highlighter-rouge">head</code> of the HTML document and must have two attributes, <code class="language-plaintext highlighter-rouge">rel</code> and <code class="language-plaintext highlighter-rouge">href</code>.</p>
+
+<p>Open up your main <strong>index.html</strong> file and add a new line beneath your <code class="language-plaintext highlighter-rouge">title</code> element. On that line add the link element, <code class="language-plaintext highlighter-rouge">&lt;link rel="#" href="#"&gt;</code>. Try and replace the “#” with the appropriate values for each attribute. The <code class="language-plaintext highlighter-rouge">rel</code> value should define the documents relationship and the <code class="language-plaintext highlighter-rouge">href</code> value should be the path to your css file. <code class="language-plaintext highlighter-rouge">rel</code> attribute – <span class="spoiler">rel=”stylesheet”</span>, <code class="language-plaintext highlighter-rouge">href</code> attribute – <span class="spoiler">href=”css/main.css”</span>.</p>
+
+<p>Another note: Again this path is for the file and folder names and locations of this tutorial. If you did something different, that path will not work.</p>
+
+<p>Once you have the values, preview the HTML page and see if the background turned yellow. If it turned yellow that means your files are connected and you can add more styles to your CSS file to control the look of your homepage. If it didn’t turn yellow try going back through and comparing your files to the screenshots and see if you can find the issue.</p>
+
+<p><img src="/assets/img/t3/step6b1.png" alt="adding the link element to the head of the HTML document" title="Step 6b1" />
+<img src="/assets/img/t3/step6b2.png" alt="broswer preview of HTML page showing CSS changes" title="Step 6b2" /></p>
+
+<h3 id="step-7-go-crazy"><span id="step7">Step 7: Go Crazy</span></h3>
+<p>Now that you have a CSS file that is connected to your HTML file you can add all the styles you want. Just remember that in order to style an element in your HTML you need to target that element with the same selector. So if you want to style the list items in your HTML file, the CSS selector is going to be <code class="language-plaintext highlighter-rouge">li</code>. If you want to style the level 1 heading, the CSS selector is going to be <code class="language-plaintext highlighter-rouge">h1</code>. This allows you to style any HTML element that displays on the page (meaning you can’t style the <code class="language-plaintext highlighter-rouge">title</code> element).</p>
+
+<p>If you run into something that you don’t know how to change, try Googling it as if you were asking me. “How do I change the font size in CSS?” or “How do I change the color of text HTML” or “How do I change the hover color of my links CSS?”</p>
+:ET
