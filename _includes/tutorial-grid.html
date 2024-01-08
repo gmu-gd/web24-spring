@@ -1,7 +1,11 @@
-{% for post in site.categories.tutorials %}
+{% if site.categories.tutorials == null %}
+  <p>If you found this site before the first class of the semester, there are no tutorials yet. The first tutorial will be posted on the first day of class.</p>
+{% else %}
+  {% for post in site.categories.tutorials %}
   <article class="tutorial">
     <h5 class="number"> {{ post.subhead }}</h5>
     <a href="{{ post.url | relative_url }}"><h2 class="event"> {{ post.title }} </h2></a>
     <p class="description"> {{ post.excerpt | strip_html }} </p>
   </article>
 {% endfor %}
+{% endif %}

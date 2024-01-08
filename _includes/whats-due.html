@@ -1,8 +1,12 @@
-{% for post in site.categories.due %}
-  <article class="single">
-    <h3>{{ post.title }}</h3>
-    <span class="due">Due {% assign seconds = 7 | times: 24 | times: 60 | times: 60 %}{{ post.date | date: "%s" | plus: seconds | date: "%B %d" }} at 1:30pm</span>
-    {{ post.content }}
-    <hr>
-  </article>
-{% endfor %}
+{% if site.categories.due == null %}
+  <p>Class hasn't started yet, nothing is due!</p>
+  {% else %}
+  {% for post in site.categories.due %}
+    <article class="single">
+      <h3>{{ post.title }}</h3>
+      <span class="due">Due {% assign seconds = 7 | times: 24 | times: 60 | times: 60 %}{{ post.date | date: "%s" | plus: seconds | date: "%B %d" }} at 1:30pm</span>
+      {{ post.content }}
+      <hr>
+    </article>
+  {% endfor %}
+{% endif %}

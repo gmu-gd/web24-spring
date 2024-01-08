@@ -1,24 +1,28 @@
 <h2 class="section-title">Look here!</h2>
-{% assign counter = 0 %}
-{% for post in site.categories.due %}
-  {% if counter < 1 %}
-    <hr>
-    <article class="home-due">
-      <h4 class="update">What's Due?</h4>
-      {{ post.content }}
-      <span class="due">All due {% assign seconds = 7 | times: 24 | times: 60 | times: 60 %}{{ post.date | date: "%s" | plus: seconds | date: "%B %d" }} at 1:30pm</span>
-    </article>
-  {% endif %}
-  {% assign counter = counter | plus: 1 %}
-{% endfor %}
-{% assign othercounter = 0 %}
-{% for post in site.categories.updates %}
-  {% if othercounter < 1 %}
-    <hr>
-    <article class="home-due">
-      <h4 class="update">{{ post.title }}</h4>
-      {{ post.content }}
-    </article>
-  {% endif %}
-  {% assign othercounter = othercounter | plus: 1 %}
-{% endfor %}
+{% if site.categories.due == null %}
+  <p>Class hasn't started yet, nothing is due and there are no updates!</p>
+  {% else %}
+  {% assign counter = 0 %}
+  {% for post in site.categories.due %}
+    {% if counter < 1 %}
+      <hr>
+      <article class="home-due">
+        <h4 class="update">What's Due?</h4>
+        {{ post.content }}
+        <span class="due">All due {% assign seconds = 7 | times: 24 | times: 60 | times: 60 %}{{ post.date | date: "%s" | plus: seconds | date: "%B %d" }} at 1:30pm</span>
+      </article>
+    {% endif %}
+    {% assign counter = counter | plus: 1 %}
+  {% endfor %}
+  {% assign othercounter = 0 %}
+  {% for post in site.categories.updates %}
+    {% if othercounter < 1 %}
+      <hr>
+      <article class="home-due">
+        <h4 class="update">{{ post.title }}</h4>
+        {{ post.content }}
+      </article>
+    {% endif %}
+    {% assign othercounter = othercounter | plus: 1 %}
+  {% endfor %}
+{% endif %}
