@@ -95,7 +95,7 @@ section { display: grid; grid-template-columns: 100%; grid-gap: 5vw; margin: 25p
 
 .single, .tutorial-page { width: 100%; margin: 50px 0; }
 
-.student, .tutorial { border: 3px solid #272727; cursor: pointer; }
+.student, .tutorial { padding: 15px; border: 3px solid #272727; cursor: pointer; }
 
 .student { margin: 0; padding: 0; font-family: rig-solid-bold-fill, sans-serif; transition: .5s ease; }
 
@@ -133,7 +133,9 @@ p { font-size: 1.2rem; line-height: 1.6em; margin-top: .25em; margin-bottom: 1.2
 
 .description { margin-bottom: 25px; }
 
-.section-title { grid-column: span 1; text-transform: uppercase; letter-spacing: .1rem; color: #FFFFFB; margin: 0; }
+.section-title, .page-title { grid-column: span 1; }
+
+.section-title { text-transform: uppercase; letter-spacing: .1rem; color: #FFFFFB; margin: 0; }
 
 .interior .section-title { color: #272727; }
 
@@ -149,7 +151,7 @@ aside { display: none; }
 
 h1, h2, h3, h4, h5 { margin: 0; font-weight: 700; line-height: 1.15; font-family: sofia-pro-soft, sans-serif; color: #272727; }
 
-h1 { font-family: rig-solid-bold-halftone, sans-serif; margin-top: 0; font-size: 15vw; line-height: .9em; padding: 10px 0 0 0; margin-left: -6px; text-transform: uppercase; letter-spacing: .1rem; font-weight: 700; color: #E148FF; }
+h1 { font-family: rig-solid-bold-halftone, sans-serif; margin-top: 0; font-size: 20vw; line-height: .9em; padding: 10px 0 0 0; margin-left: -6px; text-transform: uppercase; letter-spacing: .1rem; font-weight: 700; color: #E148FF; }
 
 .interior h1 { color: #E148FF; }
 
@@ -283,17 +285,17 @@ p#warning { font-size: .8em; margin: 10px 0 25px; }
 .clearfix:after { clear: both; }
 
 /* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */
-@media only screen and (min-width: 520px) { header { position: relative; } main, #head-contain { width: 95vw; } .page-info { padding: 2.5vw; } .due-box { padding: 2.5vw; } section { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 2.5vw 2.5vw; margin: 50px 0; } .section-title { grid-column: span 2; } .student p { font-size: 2.2rem; } h1 a, h1 a:hover, h1 a:active, h1 a:visited { color: #272727; } .interior h1 a, .interior h1 a:hover { border-bottom: none; color: #FFFFFB; } h1 { margin-top: 0; text-transform: uppercase; letter-spacing: .1rem; font-weight: 700; color: #272727; } ul { text-decoration: none; list-style-type: none; text-align: left; } li { padding: 0; margin: 15px 0 0; text-transform: uppercase; letter-spacing: .05rem; font-weight: bold; float: none; } }
+@media only screen and (min-width: 520px) { header { position: relative; } main, #head-contain { width: 95vw; } .page-info { padding: 2.5vw; } .due-box { padding: 2.5vw; } section { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 2.5vw 2.5vw; margin: 50px 0; } .section-title, .page-title { grid-column: span 2; } .student p { font-size: 2.2rem; } h1 a, h1 a:hover, h1 a:active, h1 a:visited { color: #272727; } .interior h1 a, .interior h1 a:hover { border-bottom: none; color: #FFFFFB; } h1 { margin-top: 0; text-transform: uppercase; letter-spacing: .1rem; font-weight: 700; color: #272727; } ul { text-decoration: none; list-style-type: none; text-align: left; } li { padding: 0; margin: 15px 0 0; text-transform: uppercase; letter-spacing: .05rem; font-weight: bold; float: none; } }
 
 @media only screen and (min-width: 620px) { .student p { font-size: 2.7rem; } }
 
-@media only screen and (min-width: 630px) { h1 { font-size: 16vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -6px; } }
+@media only screen and (min-width: 630px) { h1 { font-size: 20vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -6px; } }
 
-@media only screen and (min-width: 768px) { nav { width: 100%; margin: 0; } nav ul { display: flow-root; } nav li.mobile-nav { display: none; } nav #menu { position: relative; top: initial; left: initial; width: initial; height: initial; z-index: initial; padding: 0; background-color: none; margin-top: 10px; } nav #menu li { float: left; margin: 0 10px; font-size: 1em; } nav #menu li:first-of-type { margin: 0 10px 0 0; } nav .mobile-hide { display: block; } main, .about, #head-contain { width: 95vw; } .tutorial-page, .single { width: 75%; } h1 { font-size: 16vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -9px; } }
+@media only screen and (min-width: 768px) { nav { width: 100%; margin: 0; } nav ul { display: flow-root; } nav li.mobile-nav { display: none; } nav #menu { position: relative; top: initial; left: initial; width: initial; height: initial; z-index: initial; padding: 0; background-color: none; margin-top: 10px; } nav #menu li { float: left; margin: 0 10px; font-size: 1em; } nav #menu li:first-of-type { margin: 0 10px 0 0; } nav .mobile-hide { display: block; } main, .about, #head-contain { width: 95vw; } .tutorial-page, .single { width: 75%; } h1 { font-size: 20vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -9px; } }
 
-@media only screen and (min-width: 1024px) { /* Style adjustments for viewports that meet the condition */ main, .about, #head-contain { width: 95vw; display: flow-root; } #top-content { grid-template-columns: 29vw 29vw 1fr; grid-template-rows: max-content max-content; gap: 0; grid-template-areas: "pi pi wd" "ar ar wd"; } .tutorial-page { width: 600px; float: left; } .single { width: 900px; } .sub-space { margin-left: 350px; } aside { display: block; float: left; max-width: 300px; margin: 50px 50px 0 0; } .sub-fixed { position: fixed; top: 50px; } section { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 2.5vw 2.5vw; margin: 50px 0; } .section-title { grid-column: span 3; } h1 { font-size: 12vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -7px; } }
+@media only screen and (min-width: 1024px) { /* Style adjustments for viewports that meet the condition */ main, .about, #head-contain { width: 95vw; display: flow-root; } #top-content { grid-template-columns: 29vw 29vw 1fr; grid-template-rows: max-content max-content; gap: 0; grid-template-areas: "pi pi wd" "ar ar wd"; } .tutorial-page { width: 600px; float: left; } .single { width: 900px; } .sub-space { margin-left: 350px; } aside { display: block; float: left; max-width: 300px; margin: 50px 50px 0 0; } .sub-fixed { position: fixed; top: 50px; } section { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 2.5vw 2.5vw; margin: 50px 0; } .section-title, .page-title { grid-column: span 4; } h1 { font-size: 12vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -7px; } }
 
-@media only screen and (min-width: 1400px) { /* Style adjustments for viewports that meet the condition */ main, #head-contain { position: relative; left: 0; } #top-content { grid-template-columns: 22vw 22vw 22vw 1fr; grid-template-rows: max-content max-content; gap: 0; grid-template-areas: "pi pi pi wd" "ar ar ar wd"; } section { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 2.5vw 2.5vw; margin: 50px 0; } .about { width: 500px; padding: 40px; } .section-title { grid-column: span 4; } h1 { font-size: 9vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -10px; } }
+@media only screen and (min-width: 1400px) { /* Style adjustments for viewports that meet the condition */ main, #head-contain { position: relative; left: 0; } #top-content { grid-template-columns: 22vw 22vw 22vw 1fr; grid-template-rows: max-content max-content; gap: 0; grid-template-areas: "pi pi pi wd" "ar ar ar wd"; } section { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 2.5vw 2.5vw; margin: 50px 0; } .about { width: 500px; padding: 40px; } .section-title, .page-title { grid-column: span 4; } h1 { font-size: 9vw; line-height: .9em; padding: 20px 0 0 0; margin-left: -10px; } }
 
 @media only screen and (min-width: 1800px) { /* Style adjustments for viewports that meet the condition */ main, #head-contain { width: 87.5vw; } .page-info { padding: 2.5vw 6.25vw; } .due-box { padding-right: 6.25vw; } h1 { font-size: 10vw; } }
 
