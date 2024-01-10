@@ -85,7 +85,7 @@ main, #head-contain { width: 90vw; margin: 0 auto; }
 
 .page-info { grid-area: pi; padding: 5vw; }
 
-.arrows { grid-area: ar; min-height: 200px; overflow: hidden; background: url(/assets/img/background.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-color: #E148FF; }
+.arrows { grid-area: ar; min-height: 200px; overflow: hidden; background: url(../img/background.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-color: #E148FF; }
 
 .due-box { grid-area: wd; grid-template-rows: max-content; padding: 5vw; background-color: #272727; color: #FFFFFB; }
 
@@ -103,7 +103,7 @@ section { display: grid; grid-template-columns: 100%; grid-gap: 5vw; margin: 25p
 
 .student:hover, .tutorial:hover { background-color: #E148FF; }
 
-.student.no-link, .student.no-link:hover { background-color: #FF6B6C; cursor: default; }
+.student.no-link, .student.no-link:hover { border-color: #FF6B6C; background-color: #FFFFFB; cursor: default; }
 
 .student:nth-child(3n+3) { margin-right: 0; }
 
