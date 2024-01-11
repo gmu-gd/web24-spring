@@ -19,7 +19,6 @@ title: Reference
 * [Type on Screen](https://www.amazon.com/Type-Screen-Critical-Designers-Developers/dp/161689170X?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-d-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=161689170X)
 
 ### Software, Coding
-* [Atom](https://atom.io/)
 * [Sublime Text](https://www.sublimetext.com/)
 * [Brackets](http://brackets.io/)
 
