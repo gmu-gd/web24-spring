@@ -99,7 +99,7 @@ Rubrics are used to grade exercises, projects, and checkpoints. The rubrics are 
 Late work will be accepted for three weeks after a deadline with the exception of the final project which will be due at the end of the semester. There is a section on the rubrics showing how late work is factored into the assignment grade. 
 
 ### Weekly Schedule
-Class is on Tuesdays from 1:30–4:10. Most days we will meet for the entire time but some weeks we will have individual meetings or end early. Some classes will be work days so make sure to bring things to work on each class. Unless otherwise specified, all work is due at the beginning of class.
+Class is on Thursdays from 1:30–4:10. Most days we will meet for the entire time but some weeks we will have individual meetings or end early. Some classes will be work days so make sure to bring things to work on each class. Unless otherwise specified, all work is due at the beginning of class.
 
 A note&emdash;Time management is an important skill to master and should be worked on all your classes. Staying up all night working is not a badge of honor, it typically means you didn’t budget your time correctly. Staying up all night isn’t healthy and making sure you are keeping yourself healthy is your first priority.
 
@@ -179,7 +179,7 @@ Students who need intensive help with grammar, structure or mechanics in their w
 
 Provisions Research Center for Art & Social Change is in Room L001 of the Art & Design Building. This student resource assists students in exploring and engaging new models for artmaking that lead to a more inclusive, equitable, and connected society. Provisions is also a hub for developing art projects through Mason Exhibitions, the Mural Brigade, and art partners throughout the metropolitan area, and beyond. Contact Don Russell for more information: drusse10@gmu.edu
 
-Art and Art History Librarian, Stephanie Grimm, will offer appointments and virtual office hours for the Spring 2023 semester: [details](https://go.gmu.edu/sgrimm4) 
+Art and Art History Librarian, Stephanie Grimm, will offer appointments and virtual office hours for the Spring 2024 semester: [details](https://go.gmu.edu/sgrimm4) 
 
 ### Counseling & Psychological Services (CAPS)
 CAPS provides a wide range of free services to students. CAPS offers crisis, counseling, and psychiatric services virtually, and limited services in person. Services are provided by a staff of licensed clinical psychologists, licensed professional counselors, licensed social workers, doctoral-level trainees, and a board-certified psychiatrist. Our individual and group counseling, workshops, and community education programs are designed to enhance students’ personal experience and academic performance. For distance learners, please see our Resources for Distance Learning page. We also provide consultation to faculty and staff who have concerns about a student.
