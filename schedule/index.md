@@ -20,7 +20,7 @@ This week we'll start to get to know a bit about each other and spend a little t
 
 #### Digital References
 * _Learning Web Design:_ [Chapters 1&ndash;5](https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml)
-* _Interneting is Hard:_ [Introduction](https://www.internetingishard.com/html-and-css/introduction/) &amp; [Basic Web Pages](https://www.internetingishard.com/html-and-css/basic-web-pages/)
+* _Interneting is Hard:_ [Introduction](https://internetingishard.netlify.app/html-and-css/introduction/) &amp; [Basic Web Pages](https://internetingishard.netlify.app/html-and-css/basic-web-pages/)
 
 ---
 
@@ -53,7 +53,7 @@ This week we'll go a little further into HTML and begin to introduce CSS. We wil
 
 #### Digital References
 * _Learning Web Design:_ [Chapters 6, 11, 12, &amp; 13](https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml)
-* _Interneting is Hard:_ [Links and Images](https://www.internetingishard.com/html-and-css/links-and-images/) &amp; [Hello CSS](https://www.internetingishard.com/html-and-css/hello-css/)
+* _Interneting is Hard:_ [Links and Images](https://internetingishard.netlify.app/html-and-css/links-and-images/) &amp; [Hello CSS](https://internetingishard.netlify.app/html-and-css/hello-css/)
 
 ---
 
@@ -68,7 +68,7 @@ Much of the information on the internet is gathered through reading. As designer
 * P2: [Website for a Blank]({{ site.baseurl }}/projects/p2)
 
 #### Digital References
-* _Interneting is Hard:_ [Web Typography](https://www.internetingishard.com/html-and-css/web-typography/)
+* _Interneting is Hard:_ [Web Typography](https://internetingishard.netlify.app/html-and-css/web-typography/)
 
 ---
 
@@ -85,7 +85,7 @@ This week we will cover the parts and designs for navigation, how to add and sty
 
 #### Digital References
 * _Learning Web Design:_ [Chapters 6, 11, &amp; 12](https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml)
-* _Interneting is Hard:_ [CSS Selectors](https://www.internetingishard.com/html-and-css/css-selectors/) &amp; [Web Typography](https://www.internetingishard.com/html-and-css/web-typography/)
+* _Interneting is Hard:_ [CSS Selectors](https://internetingishard.netlify.app/html-and-css/css-selectors/) &amp; [Web Typography](https://internetingishard.netlify.app/html-and-css/web-typography/)
 
 ---
 
@@ -100,7 +100,7 @@ Responsive design is a key element of designing for the web today. This week we 
 
 #### Digital References
 * _Learning Web Design:_ [Chapter 17](https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml)
-* _Interneting is Hard:_ [Responsive Design](https://www.internetingishard.com/html-and-css/responsive-design/) &amp; [Responsive Images](https://www.internetingishard.com/html-and-css/responsive-images/)
+* _Interneting is Hard:_ [Responsive Design](https://internetingishard.netlify.app/html-and-css/responsive-design/) &amp; [Responsive Images](https://internetingishard.netlify.app/html-and-css/responsive-images/)
 
 ---
 
@@ -116,7 +116,7 @@ Every element in HTML is a rectangular box and the box model will help us unders
 
 #### Digital References
 * _Learning Web Design:_ [Chapters 14 &amp; 15](https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml)
-* _Interneting is Hard:_ [The Box Model](https://www.internetingishard.com/html-and-css/css-box-model/), [Floats](https://www.internetingishard.com/html-and-css/floats/) &amp; if your looking for more flexibility in your layouts try [Flexbox](https://www.internetingishard.com/html-and-css/flexbox/)
+* _Interneting is Hard:_ [The Box Model](https://internetingishard.netlify.app/html-and-css/css-box-model/), [Floats](https://internetingishard.netlify.app/html-and-css/floats/) &amp; if your looking for more flexibility in your layouts try [Flexbox](https://internetingishard.netlify.app/html-and-css/flexbox/)
 
 ---
 
@@ -156,7 +156,7 @@ Using CSS we can position elements exactly where we want them to appear on scree
 
 #### Digital References
 * _Learning Web Design:_ [Chapters 15](https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml)
-* _Interneting is Hard:_ [Advanced Positioning](https://www.internetingishard.com/html-and-css/advanced-positioning/)
+* _Interneting is Hard:_ [Advanced Positioning](https://internetingishard.netlify.app/html-and-css/advanced-positioning/)
 
 ---
 

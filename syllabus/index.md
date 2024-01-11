@@ -3,7 +3,7 @@ layout: interior
 title: Syllabus
 ---
 ### General
-We will meet in person once a week on Tuesdays from 1:30 to 4:10 in AB 1021. The classes are required and during our sessions we will discuss work, complete assignments, and further our design knowledge. The class is scheduled to run for 15 weeks and you can expect to work for 6 hours outside of class each week.
+We will meet in person once a week on Thursdays from 1:30 to 4:10 in AB 1021. The classes are required and during our sessions we will discuss work, complete assignments, and further our design knowledge. The class is scheduled to run for 15 weeks and you can expect to work for 6 hours outside of class each week.
 
 ### Prerequisites
 AVT 180: New Media in the Creative Arts, AVT 110: Digital Design Studio, or permission of instructor.

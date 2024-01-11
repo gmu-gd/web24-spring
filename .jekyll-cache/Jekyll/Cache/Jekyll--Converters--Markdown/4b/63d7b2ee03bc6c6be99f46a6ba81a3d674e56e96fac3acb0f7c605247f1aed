@@ -1,46 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Schedule</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dyc5bmi.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
-  <body class="interior">
-    <header>
-  <div id="head-contain">
-    <nav>
-  <ul>
-    <li><a class="main-link" href="/" />Intro to Web</a></li>
-    <li><i class="fas fa-arrow-right"></i></li>
-    <li class="mobile-nav"><a>menu</a></li>
-    <div id="menu" class="mobile-hide">
-    
-      <li><a href="/syllabus/" >Syllabus</a></li>
-    
-      <li><a href="/schedule/" class="active">Schedule</a></li>
-    
-      <li><a href="/projects/" >Projects</a></li>
-    
-      <li><a href="/tutorials/" >Tutorials</a></li>
-    
-      <li><a href="/reference/" >Reference</a></li>
-    
-    </div>
-  </ul>
-</nav>
-
-  </div>
-</header>
-
-    <main>
-      <article class="single">
-        <h2 class="page-title"> Schedule </h2>
-        <p>This schedule maps out what we are covering in class each week and what work we are starting that day. It is very subject to change as we go along in class.</p>
+I"i*<p>This schedule maps out what we are covering in class each week and what work we are starting that day. It is very subject to change as we go along in class.</p>
 
 <p>If you want to know what is due for next class, <a href="/due">check here</a>.</p>
 
@@ -126,7 +84,7 @@
 
 <h4 id="digital-references-3">Digital References</h4>
 <ul>
-  <li><em>Interneting is Hard:</em> <a href="https://internetingishard.netlify.app/html-and-css/web-typography/">Web Typography</a></li>
+  <li><em>Interneting is Hard:</em> <a href="https://www.internetingishard.com/html-and-css/web-typography/">Web Typography</a></li>
 </ul>
 
 <hr />
@@ -149,7 +107,7 @@
 <h4 id="digital-references-4">Digital References</h4>
 <ul>
   <li><em>Learning Web Design:</em> <a href="https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml">Chapters 6, 11, &amp; 12</a></li>
-  <li><em>Interneting is Hard:</em> <a href="https://internetingishard.netlify.app/html-and-css/css-selectors/">CSS Selectors</a> &amp; <a href="https://internetingishard.netlify.app/html-and-css/web-typography/">Web Typography</a></li>
+  <li><em>Interneting is Hard:</em> <a href="https://www.internetingishard.com/html-and-css/css-selectors/">CSS Selectors</a> &amp; <a href="https://www.internetingishard.com/html-and-css/web-typography/">Web Typography</a></li>
 </ul>
 
 <hr />
@@ -170,7 +128,7 @@
 <h4 id="digital-references-5">Digital References</h4>
 <ul>
   <li><em>Learning Web Design:</em> <a href="https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml">Chapter 17</a></li>
-  <li><em>Interneting is Hard:</em> <a href="https://internetingishard.netlify.app/html-and-css/responsive-design/">Responsive Design</a> &amp; <a href="https://internetingishard.netlify.app/html-and-css/responsive-images/">Responsive Images</a></li>
+  <li><em>Interneting is Hard:</em> <a href="https://www.internetingishard.com/html-and-css/responsive-design/">Responsive Design</a> &amp; <a href="https://www.internetingishard.com/html-and-css/responsive-images/">Responsive Images</a></li>
 </ul>
 
 <hr />
@@ -192,7 +150,7 @@
 <h4 id="digital-references-6">Digital References</h4>
 <ul>
   <li><em>Learning Web Design:</em> <a href="https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml">Chapters 14 &amp; 15</a></li>
-  <li><em>Interneting is Hard:</em> <a href="https://internetingishard.netlify.app/html-and-css/css-box-model/">The Box Model</a>, <a href="https://internetingishard.netlify.app/html-and-css/floats/">Floats</a> &amp; if your looking for more flexibility in your layouts try <a href="https://internetingishard.netlify.app/html-and-css/flexbox/">Flexbox</a></li>
+  <li><em>Interneting is Hard:</em> <a href="https://www.internetingishard.com/html-and-css/css-box-model/">The Box Model</a>, <a href="https://www.internetingishard.com/html-and-css/floats/">Floats</a> &amp; if your looking for more flexibility in your layouts try <a href="https://www.internetingishard.com/html-and-css/flexbox/">Flexbox</a></li>
 </ul>
 
 <hr />
@@ -244,7 +202,7 @@
 <h4 id="digital-references-8">Digital References</h4>
 <ul>
   <li><em>Learning Web Design:</em> <a href="https://learning-oreilly-com.mutex.gmu.edu/library/view/learning-web-design/9781491960196/lwd5_chapter01.xhtml">Chapters 15</a></li>
-  <li><em>Interneting is Hard:</em> <a href="https://internetingishard.netlify.app/html-and-css/advanced-positioning/">Advanced Positioning</a></li>
+  <li><em>Interneting is Hard:</em> <a href="https://www.internetingishard.com/html-and-css/advanced-positioning/">Advanced Positioning</a></li>
 </ul>
 
 <hr />
@@ -331,10 +289,4 @@
 
 <h3 id="week-16-52">Week 16 [5.2]</h3>
 <p>Final Class</p>
-
-      </article>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js" charset="utf-8"></script>
-  </body>
-</html>
+:ET

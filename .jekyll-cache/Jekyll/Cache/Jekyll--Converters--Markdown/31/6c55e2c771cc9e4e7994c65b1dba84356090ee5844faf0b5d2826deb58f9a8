@@ -1,46 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Syllabus</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dyc5bmi.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
-  <body class="interior">
-    <header>
-  <div id="head-contain">
-    <nav>
-  <ul>
-    <li><a class="main-link" href="/" />Intro to Web</a></li>
-    <li><i class="fas fa-arrow-right"></i></li>
-    <li class="mobile-nav"><a>menu</a></li>
-    <div id="menu" class="mobile-hide">
-    
-      <li><a href="/syllabus/" class="active">Syllabus</a></li>
-    
-      <li><a href="/schedule/" >Schedule</a></li>
-    
-      <li><a href="/projects/" >Projects</a></li>
-    
-      <li><a href="/tutorials/" >Tutorials</a></li>
-    
-      <li><a href="/reference/" >Reference</a></li>
-    
-    </div>
-  </ul>
-</nav>
-
-  </div>
-</header>
-
-    <main>
-      <article class="single">
-        <h2 class="page-title"> Syllabus </h2>
-        <h3 id="general">General</h3>
+I"‹f<h3 id="general">General</h3>
 <p>We will meet in person once a week on Thursdays from 1:30 to 4:10 in AB 1021. The classes are required and during our sessions we will discuss work, complete assignments, and further our design knowledge. The class is scheduled to run for 15 weeks and you can expect to work for 6 hours outside of class each week.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
@@ -257,10 +215,4 @@
 
 <p>Grounded in the knowledge that it is not a question of whether we are racist, but rather, how racism is expressed and experienced in ourselves, our lives, our behaviors, and our institutions, we explore books, music, art, essays, podcasts, and documentaries that allow us to critically question and consider our roles as artists, thinkers, citizens, and creatives in a society founded on racist values and practices.
 A schedule of sessions will be available <a href="https://cvpa.gmu.edu/events/arts-context/kritikos-anti-racist-reading-group">here</a>.</p>
-
-      </article>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js" charset="utf-8"></script>
-  </body>
-</html>
+:ET
