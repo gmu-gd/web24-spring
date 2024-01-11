@@ -3,15 +3,13 @@ layout: interior
 title: Reference
 ---
 ### Demo Repositories
-* [Class Repository AM - Github](https://github.com/mmcdermott18/avt217-sp21-am/)
-* [Class Repository AM - Live](https://mmcdermott18.github.io/avt217-sp21-am)
-* [Class Repository PM - Github](https://github.com/mmcdermott18/avt217-sp21-pm/)
-* [Class Repository PM - Live](https://mmcdermott18.github.io/avt217-sp21-pm)
+<!-- * [Class Repository - Github](https://github.com/mmcdermott18/avt217-sp24/) -->
+<!-- * [Class Repository - Live](https://mmcdermott18.github.io/avt217-sp24) -->
 
 ### Websites, Useful
 * [HTML Elements Cheatsheet](https://gmu-gd.github.io/web20-spring/files/learn-html-elements.pdf)
 * [Codecademy](https://www.codecademy.com/)
-* [Interneting is Hard](https://www.internetingishard.com/)
+* [Interneting is Hard](https://internetingishard.netlify.app/)
 * [A List Apart](https://alistapart.com/)
 * [Web Design in 4 Minutes](https://jgthms.com/web-design-in-4-minutes/)
 
@@ -35,7 +33,6 @@ title: Reference
 ### Software, Other
 * [GitHub Desktop](https://desktop.github.com/)
 * [Zoom](https://zoom.us/)
-* [Slack](https://slack.com/)
 
 ### Websites, Showcase
 * [Lynn Fisher](https://lynnandtonic.com/)
