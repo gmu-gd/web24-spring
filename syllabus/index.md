@@ -87,7 +87,7 @@ This percentage will be based on your engagement in the class. Be engaged in thi
 The exercises are meant to be quicker, skill building tasks that improve your projects and design knowledge.
 
 #### Projects (40%)
-Each project will generate two different grades. One grade will be based on your week to week process and the second grade will be based on the final submission. At the end of the semester you will have 4 total project grades that are all weighted equally for this 40%.
+Each project will generate two different grades. One grade will be based on your week to week process and the second grade will be based on the final submission. At the end of the semester you will have 4 total project grades that are all weighted equally for this 4e0%.
 
 ### Late Work
 Late work will be accepted for three weeks after a deadline with the exception of the final project which will be due at the end of the semester. There is a section on the rubrics showing how late work is factored into the assignment grade.
@@ -98,7 +98,7 @@ Rubrics are used to grade exercises, projects, and checkpoints. The rubrics are 
 ### Weekly Schedule
 Class is on Thursdays from 1:30–4:10. Most days we will meet for the entire time but some weeks we will have individual meetings or end early. Some classes will be work days so make sure to bring things to work on each class. Unless otherwise specified, all work is due at the beginning of class.
 
-A note&emdash;Time management is an important skill to master and should be worked on all your classes. Staying up all night working is not a badge of honor, it typically means you didn’t budget your time correctly. Staying up all night isn’t healthy and making sure you are keeping yourself healthy is your first priority.
+A note&mdash;Time management is an important skill to master and should be worked on all your classes. Staying up all night working is not a badge of honor, it typically means you didn’t budget your time correctly. Staying up all night isn’t healthy and making sure you are keeping yourself healthy is your first priority.
 
 ### Semester Schedule
 The [schedule]({{ site.baseurl }}/schedule/) on this site is an outline of what we will be covering this spring with due dates. It is subject to additions, subtractions, and shifts.
