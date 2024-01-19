@@ -95,9 +95,6 @@ Late work will be accepted for three weeks after a deadline with the exception o
 ### Rubrics
 Rubrics are used to grade exercises, projects, and checkpoints. The rubrics are on the last pages of the PDF syllabus and tied to each submission on Blackboard. The rubrics are here to allow you to understand how work is graded and to reference while working to self-evaluate. 
 
-### Late Work
-Late work will be accepted for three weeks after a deadline with the exception of the final project which will be due at the end of the semester. There is a section on the rubrics showing how late work is factored into the assignment grade. 
-
 ### Weekly Schedule
 Class is on Thursdays from 1:30–4:10. Most days we will meet for the entire time but some weeks we will have individual meetings or end early. Some classes will be work days so make sure to bring things to work on each class. Unless otherwise specified, all work is due at the beginning of class.
 
