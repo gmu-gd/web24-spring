@@ -1,8 +1,14 @@
 {% for post in site.categories.student reversed%}
   {% if post.link == false %}
-    <article class="student no-link">
-      <p>{{ post.title }}</p>
-    </article>
+    {% if post.username == false %}
+      <article class="student no-link">
+        <p>{{ post.title }}</p>
+      </article>
+    {% elsif post.link != false %}
+      <article class="student username">
+        <p>{{ post.title }}</p>
+      </article>
+    {% endif %}    
   {% elsif post.link != false %}
     <article class="student">
       <a href="{{ post.link | absolute_url }}" target="_blank"><p>{{ post.title }}</p></a>

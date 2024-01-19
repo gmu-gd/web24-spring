@@ -309,6 +309,11 @@ section {
   background-color: $light-color;
   cursor: default;
 }
+.student.username, .student.username:hover {
+  border-color: $secondary-color;
+  background-color: $secondary-color;
+  cursor: default;
+}
 .student:nth-child(3n+3) {
   margin-right: 0;
 }
