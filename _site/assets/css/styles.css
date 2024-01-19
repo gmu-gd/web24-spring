@@ -105,11 +105,13 @@ section { display: grid; grid-template-columns: 100%; grid-gap: 5vw; margin: 25p
 
 .student.no-link, .student.no-link:hover { border-color: #FF6B6C; background-color: #FFFFFB; cursor: default; }
 
+.student.username, .student.username:hover { border-color: #6ECDDC; background-color: #FFFFFB; cursor: default; }
+
 .student:nth-child(3n+3) { margin-right: 0; }
 
 .tutorial a, .tutorial p, .tutorial h5 { transition: color .5s ease; }
 
-.tutorial:hover a, .tutorial:hover p, .tutorial:hover h5 { color: #FFFFFB; }
+.tutorial:hover a, .tutorial:hover p, .tutorial:hover h5 { color: #272727; }
 
 section.projects { display: block; }
 
@@ -155,7 +157,7 @@ h1 { font-family: rig-solid-bold-halftone, sans-serif; margin-top: 0; font-size:
 
 .interior h1 { color: #E148FF; }
 
-.interior h2.page-title { font-family: rig-solid-bold-halftone, sans-serif; font-size: 4em; }
+.interior h2.page-title { font-family: rig-solid-bold-halftone, sans-serif; font-size: 3.5em; }
 
 h2 { font-size: 2.441em; text-transform: uppercase; letter-spacing: .1px; font-weight: 700; margin-top: .25rem; }
 
