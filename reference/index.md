@@ -3,8 +3,8 @@ layout: interior
 title: Reference
 ---
 ### Demo Repositories
-<!-- * [Class Repository - Github](https://github.com/mmcdermott18/avt217-sp24/) -->
-<!-- * [Class Repository - Live](https://mmcdermott18.github.io/avt217-sp24) -->
+* [Class Repository - Github](https://github.com/mmcdermott18/avt217-sp24/)
+* [Class Repository - Live](https://mmcdermott18.github.io/avt217-sp24)
 
 ### Websites, Useful
 * [HTML Elements Cheatsheet](https://gmu-gd.github.io/web20-spring/files/learn-html-elements.pdf)
