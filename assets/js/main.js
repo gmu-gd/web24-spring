@@ -64,7 +64,7 @@ function shuffle(array) {
 }
 
 function randomList(){
-  var students = ["Ada", "Ayman", "Camille", "Claudia", "Eren", "Esther", "Hope", "Jared", "Jessie", "Julianne", "Kerbey", "Logan", "Nancy", "Nomin", "Ryan", "Travis", "Tre'lise", "Venice", "Yinyu", "Zubair"];
+  var students = ["Ada", "Ayman", "Camille", "Claudia", "Eren", "Esther", "Nikko", "Jared", "Jessie", "Julianne", "Kerbey", "Logan", "Nancy", "Nomin", "Ryan", "Travis", "Tre'lise", "Venice", "Yinyu", "Zubair"];
   var y;
   $('#generate').click( function(){
     $('ol').empty()
